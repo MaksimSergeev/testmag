@@ -303,7 +303,7 @@ ul.callbacks_tabs.callbacks1_tabs {
     text-decoration: none;
     height: 35px;
     width: 35px;
-    background: url("../template/images/img-sprite.png") no-repeat -13px -98px, rgba(204, 83, 31, 0.5);
+    background: url("../images/img-sprite.png") no-repeat -13px -98px, rgba(204, 83, 31, 0.5);
 }
 
 .rslides_nav.next {

@@ -3,12 +3,11 @@
 
 <head>
     <title>TestMag | Home</title>
-    <link href="template/css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="template/js/jquery.min.js"></script>
+    <link href="/template/css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+    <script src="/template/js/jquery.min.js"></script>
     <!-- Custom Theme files -->
     <!--theme-style-->
-    <link href="template/css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="/template/css/style.css" rel="stylesheet" type="text/css" media="all"/>
     <!--//theme-style-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -17,15 +16,14 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
     <!--//fonts-->
     <!-- start menu -->
-    <link href="template/css/memenu.css" rel="stylesheet" type="text/css" media="all"/>
-    <script type="text/javascript" src="template/js/memenu.js"></script>
+    <link href="/template/css/memenu.css" rel="stylesheet" type="text/css" media="all"/>
+    <script type="text/javascript" src="/template/js/memenu.js"></script>
     <script>
         $(document).ready(function () {
             $(".memenu").memenu();
         });
     </script>
-    <script src="template/js/simpleCart.min.js">
-    </script>
+    <script src="/template/js/simpleCart.min.js"></script>
 </head>
 
 <body>
@@ -52,7 +50,7 @@
                                 <span class="simpleCart_total"></span> (<span id="simpleCart_quantity"
                                                                               class="simpleCart_quantity"></span> items)
                             </div>
-                            <img src="template/images/cart.png" alt=""/></h3>
+                            <img src="/template/images/cart.png" alt=""/></h3>
                     </a>
                     <p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
                 </div>
@@ -64,7 +62,7 @@
     <div class="container">
         <div class="head-top">
             <div class="logo">
-                <a href="index.html"><img src="template/images/logo.png" alt=""></a>
+                <a href="index.html"><img src="/template/images/logo.png" alt=""></a>
             </div>
             <div class=" h_menu4">
                 <ul class="memenu skyblue">
@@ -154,7 +152,7 @@
                         </div>
                     </li>
                     <li><a class="color4" href="blog.html">Blog</a></li>
-                    <li><a class="color6" href="contact.html">Conact</a></li>
+                    <li><a class="color6" href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <div class="clearfix"></div>

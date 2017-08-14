@@ -1,7 +1,7 @@
 <?php include ROOT.'/views/layouts/header.php'; ?>
 <!--banner-->
 <div class="banner">
-    <script src="template/js/responsiveslides.min.js"></script>
+    <script src="/template/js/responsiveslides.min.js"></script>
     <script>
         $(function () {
             $(".rslides").responsiveSlides({
@@ -12,7 +12,7 @@
     </script>
     <div class="rslides">
         <li>
-            <a href="single.html"><img src="template/images/23.jpg" alt="">
+            <a href="single.html"><img src="/template/images/23.jpg" alt="">
                 <div class="banner-text">
                     <h3>Style jeans</h3>
                     <p>Wide selection of stylish jeans.</p>
@@ -20,7 +20,7 @@
             </a>
         </li>
         <li>
-            <a href="single.html"><img src="template/images/2.jpg" alt="">
+            <a href="single.html"><img src="/template/images/2.jpg" alt="">
                 <div class="banner-text">
                     <h3>Brand shoes</h3>
                     <p>In our store you will find a wide selection of high-quality shoes.</p>
@@ -28,7 +28,7 @@
             </a>
         </li>
         <li>
-            <a href="single.html"><img src="template/images/3.jpg" alt="">
+            <a href="single.html"><img src="/template/images/3.jpg" alt="">
                 <div class="banner-text">
                     <h3>Original T-shirts</h3>
                     <p>We have the most unusual prints on T-shirts.</p>
@@ -46,7 +46,7 @@
             <div class="grid-in">
                 <div class="col-md-4 grid-top">
                     <a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive"
-                                                                                            src="template/images/pi.jpg" alt="">
+                                                                                            src="/template/images/pi.jpg" alt="">
                         <div class="b-wrapper">
                             <h3 class="b-animate b-from-left    b-delay03 ">
                                 <span>T-Shirt</span>
@@ -57,7 +57,7 @@
                 </div>
                 <div class="col-md-4 grid-top">
                     <a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive"
-                                                                                            src="template/images/pi1.jpg" alt="">
+                                                                                            src="/template/images/pi1.jpg" alt="">
                         <div class="b-wrapper">
                             <h3 class="b-animate b-from-left    b-delay03 ">
                                 <span>Shoe</span>
@@ -68,7 +68,7 @@
                 </div>
                 <div class="col-md-4 grid-top">
                     <a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive"
-                                                                                            src="template/images/pi2.jpg" alt="">
+                                                                                            src="/template/images/pi2.jpg" alt="">
                         <div class="b-wrapper">
                             <h3 class="b-animate b-from-left    b-delay03 ">
                                 <span>Bag</span>
@@ -82,7 +82,7 @@
             <div class="grid-in">
                 <div class="col-md-4 grid-top">
                     <a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive"
-                                                                                            src="template/images/pi3.jpg" alt="">
+                                                                                            src="/template/images/pi3.jpg" alt="">
                         <div class="b-wrapper">
                             <h3 class="b-animate b-from-left    b-delay03 ">
                                 <span>Shirt</span>
@@ -93,7 +93,7 @@
                 </div>
                 <div class="col-md-4 grid-top">
                     <a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive"
-                                                                                            src="template/images/pi4.jpg" alt="">
+                                                                                            src="/template/images/pi4.jpg" alt="">
                         <div class="b-wrapper">
                             <h3 class="b-animate b-from-left    b-delay03 ">
                                 <span>Bag</span>
@@ -104,7 +104,7 @@
                 </div>
                 <div class="col-md-4 grid-top">
                     <a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive"
-                                                                                            src="template/images/pi5.jpg" alt="">
+                                                                                            src="/template/images/pi5.jpg" alt="">
                         <div class="b-wrapper">
                             <h3 class="b-animate b-from-left    b-delay03 ">
                                 <span>Shoe</span>
@@ -120,7 +120,7 @@
             <h2>Featured Collections</h2>
             <div class="col-md-6 men">
                 <a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive"
-                                                                                        src="template/images/t1.jpg" alt="">
+                                                                                        src="/template/images/t1.jpg" alt="">
                     <div class="b-wrapper">
                         <h3 class="b-animate b-from-top top-in   b-delay03 ">
                             <span>Lorem</span>
@@ -131,7 +131,7 @@
             <div class="col-md-6">
                 <div class="col-md1 ">
                     <a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive"
-                                                                                            src="template/images/t2.jpg" alt="">
+                                                                                            src="/template/images/t2.jpg" alt="">
                         <div class="b-wrapper">
                             <h3 class="b-animate b-from-top top-in1   b-delay03 ">
                                 <span>Lorem</span>
@@ -142,7 +142,7 @@
                 <div class="col-md2">
                     <div class="col-md-6 men1">
                         <a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive"
-                                                                                                src="template/images/t3.jpg"
+                                                                                                src="/template/images/t3.jpg"
                                                                                                 alt="">
                             <div class="b-wrapper">
                                 <h3 class="b-animate b-from-top top-in2   b-delay03 ">
@@ -153,7 +153,7 @@
                     </div>
                     <div class="col-md-6 men2">
                         <a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive"
-                                                                                                src="template/images/t4.jpg"
+                                                                                                src="/template/images/t4.jpg"
                                                                                                 alt="">
                             <div class="b-wrapper">
                                 <h3 class="b-animate b-from-top top-in2   b-delay03 ">
@@ -171,22 +171,22 @@
     <div class="content-bottom">
         <ul>
             <li>
-                <a href="#"><img class="img-responsive" src="template/images/lo.png" alt=""></a>
+                <a href="#"><img class="img-responsive" src="/template/images/lo.png" alt=""></a>
             </li>
             <li>
-                <a href="#"><img class="img-responsive" src="template/images/lo1.png" alt=""></a>
+                <a href="#"><img class="img-responsive" src="/template/images/lo1.png" alt=""></a>
             </li>
             <li>
-                <a href="#"><img class="img-responsive" src="template/images/lo2.png" alt=""></a>
+                <a href="#"><img class="img-responsive" src="/template/images/lo2.png" alt=""></a>
             </li>
             <li>
-                <a href="#"><img class="img-responsive" src="template/images/lo3.png" alt=""></a>
+                <a href="#"><img class="img-responsive" src="/template/images/lo3.png" alt=""></a>
             </li>
             <li>
-                <a href="#"><img class="img-responsive" src="template/images/lo4.png" alt=""></a>
+                <a href="#"><img class="img-responsive" src="/template/images/lo4.png" alt=""></a>
             </li>
             <li>
-                <a href="#"><img class="img-responsive" src="template/images/lo5.png" alt=""></a>
+                <a href="#"><img class="img-responsive" src="/template/images/lo5.png" alt=""></a>
             </li>
             <div class="clearfix"></div>
         </ul>

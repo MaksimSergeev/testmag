@@ -42,7 +42,4 @@
             and Sergeev M.V.</p>
     </div>
 </div>
-</body>
-
 </html>
-<!--footer-->

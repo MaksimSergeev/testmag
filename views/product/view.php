@@ -10,59 +10,22 @@
                         <h3 class="cate">Categories</h3>
                     </div>
                     <ul class="menu">
-                        <li class="item1"><a href="#">Men </a>
                             <ul class="cute">
-                                <li class="subitem1"><a href="#">Accessories</a></li>
-                                <li class="subitem2"><a href="#">Bags</a></li>
-                                <li class="subitem3"><a href="#">Caps & Hats</a></li>
-                                <li class="subitem4"><a href="#">Hoodies & Sweatshirts</a></li>
-                                <li class="subitem5"><a href="#">Jackets & Coats</a></li>
-                                <li class="subitem6"><a href="#">Jeans</a></li>
-                                <li class="subitem7"><a href="#">Shirts</a></li>
-                                <li class="subitem8"><a href="#">Shoes</a></li>
-                                <li class="subitem9"><a href="#">Suits & Blazers</a></li>
-                                <li class="subitem10"><a href="#">Sunglasses</a></li>
-                                <li class="subitem11"><a href="#">T-Shirts</a></li>
+                                <li class="subitem1"><a href="#">Hammer Drills</a></li>
+                                <li class="subitem2"><a href="#">Cordless Drills</a></li>
+                                <li class="subitem3"><a href="#">Drills</a></li>
+                                <li class="subitem4"><a href="#">Grinders</a></li>
+                                <li class="subitem5"><a href="#">Circular Saws</a></li>
+                                <li class="subitem6"><a href="#">Saws</a></li>
+                                <li class="subitem7"><a href="#">Nailers</a></li>
+                                <li class="subitem8"><a href="#">Mixing Tools</a></li>
+                                <li class="subitem9"><a href="#">Multi Tools</a></li>
+                                <li class="subitem10"><a href="#">Sanders</a></li>
+                                <li class="subitem11"><a href="#">Vacuums</a></li>
+                                <li class="subitem12"><a href="#">Welders</a></li>
                             </ul>
-                        </li>
-                        <li class="item2"><a href="#">Women </a>
-                            <ul class="cute">
-                                <li class="subitem1"><a href="#">Accessories</a></li>
-                                <li class="subitem2"><a href="#">Bags</a></li>
-                                <li class="subitem3"><a href="#">Caps & Hats</a></li>
-                                <li class="subitem4"><a href="#">Hoodies & Sweatshirts</a></li>
-                                <li class="subitem5"><a href="#">Jackets & Coats</a></li>
-                                <li class="subitem6"><a href="#">Jeans</a></li>
-                                <li class="subitem7"><a href="#">Shirts</a></li>
-                                <li class="subitem8"><a href="#">Shoes</a></li>
-                                <li class="subitem9"><a href="#">Suits & Blazers</a></li>
-                                <li class="subitem10"><a href="#">Sunglasses</a></li>
-                                <li class="subitem11"><a href="#">T-Shirts</a></li>
-                            </ul>
-                        </li>
                     </ul>
                 </div>
-                <!--initiate accordion-->
-                <script type="text/javascript">
-                    $(function () {
-                        var menu_ul = $('.menu > li > ul'),
-                            menu_a = $('.menu > li > a');
-                        menu_ul.hide();
-                        menu_a.click(function (e) {
-                            e.preventDefault();
-                            if (!$(this).hasClass('active')) {
-                                menu_a.removeClass('active');
-                                menu_ul.filter(':visible').slideUp('normal');
-                                $(this).addClass('active').next().stop(true, true).slideDown('normal');
-                            } else {
-                                $(this).removeClass('active');
-                                $(this).next().stop(true, true).slideUp('normal');
-                            }
-                        });
-
-                    });
-                </script>
-                <!---->
 
                 <!---->
                 <div class="product-bottom">
@@ -91,32 +54,6 @@
                             <h6 class="best2"><a href="#">Lorem ipsum dolor sit amet consectetuer </a></h6>
 
                             <span class=" price-in1"> $29.99</span>
-                        </div>
-
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="product-go">
-                        <div class=" fashion-grid">
-                            <a href="#"><img class="img-responsive " src="/template/images/p3.jpg" alt=""></a>
-
-                        </div>
-                        <div class="fashion-grid1">
-                            <h6 class="best2"><a href="#">Lorem ipsum dolor sit amet consectetuer </a></h6>
-
-                            <span class=" price-in1"> $35.99</span>
-                        </div>
-
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="product-go">
-                        <div class=" fashion-grid">
-                            <a href="#"><img class="img-responsive " src="/template/images/p4.jpg" alt=""></a>
-
-                        </div>
-                        <div class="fashion-grid1">
-                            <h6 class="best2"><a href="#">Lorem ipsum dolor sit amet consectetuer </a></h6>
-
-                            <span class=" price-in1"> $57.99</span>
                         </div>
 
                         <div class="clearfix"></div>
@@ -159,100 +96,26 @@
                     <div class="single-para ">
                         <h4>Lorem Ipsum</h4>
                         <div class="star-on">
-                            <ul class="star-footer">
-                                <li><a href="#"><i> </i></a></li>
-                                <li><a href="#"><i> </i></a></li>
-                                <li><a href="#"><i> </i></a></li>
-                                <li><a href="#"><i> </i></a></li>
-                                <li><a href="#"><i> </i></a></li>
-                            </ul>
-                            <div class="review">
-                                <a href="#"> 1 customer review </a>
 
-                            </div>
                             <div class="clearfix"></div>
                         </div>
 
                         <h5 class="item_price">$ 95.00</h5>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
-                            ut laoreet dolore magna aliquam erat </p>
-                        <div class="available">
-                            <ul>
-                                <li>Color
-                                    <select>
-                                        <option>Black</option>
-                                        <option>Blue</option>
-                                        <option>Red</option>
-                                    </select></li>
-                                <li class="size-in">Size<select>
-                                        <option>S</option>
-                                        <option>M</option>
-                                        <option>L</option>
-                                        <option>XL</option>
-                                    </select></li>
+                            ut laoreet dolore magna aliquam erat dvsdgdsg dhyjytjyt rhrehtrhr trhrthrthrt</p>
                                 <div class="clearfix"></div>
                             </ul>
-                        </div>
                         <a href="#" class="add-cart item_add">ADD TO CART</a>
 
                     </div>
                 </div>
                 <div class="clearfix"></div>
+                <hr>
                 <!---->
-                <div class="cd-tabs">
-                    <nav>
-                        <ul class="cd-tabs-navigation">
-                            <li><a data-content="fashion" href="#0">Description </a></li>
-                            <li><a data-content="television" href="#0" class="selected ">Reviews (1)</a></li>
+   
 
-                        </ul>
-                    </nav>
-                    <ul class="cd-tabs-content">
-                        <li data-content="fashion">
-                            <div class="facts">
-                                <p> There are many variations of passages of Lorem Ipsum available, but the majority have
-                                    suffered alteration in some form, by injected humour, or randomised words which don't
-                                    look even slightly believable. If you are going to use a passage of Lorem Ipsum, you
-                                    need to be sure there isn't anything embarrassing hidden in the middle of text. All the
-                                    Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary,
-                                    making this the first true generator on the Internet. It uses a dictionary of over 200
-                                    Latin words, combined </p>
-                                <ul>
-                                    <li>Research</li>
-                                    <li>Design and Development</li>
-                                    <li>Porting and Optimization</li>
-                                    <li>System integration</li>
-                                    <li>Verification, Validation and Testing</li>
-                                    <li>Maintenance and Support</li>
-                                </ul>
-                            </div>
-
-                        </li>
-                        <li data-content="television" class="selected">
-                            <div class="comments-top-top">
-                                <div class="top-comment-left">
-                                    <img class="img-responsive" src="/template/images/co.png" alt="">
-                                </div>
-                                <div class="top-comment-right">
-                                    <h6><a href="#">Hendri</a> - September 8, 2016</h6>
-                                    <ul class="star-footer">
-                                        <li><a href="#"><i> </i></a></li>
-                                        <li><a href="#"><i> </i></a></li>
-                                        <li><a href="#"><i> </i></a></li>
-                                        <li><a href="#"><i> </i></a></li>
-                                        <li><a href="#"><i> </i></a></li>
-                                    </ul>
-                                    <p>Wow, nice!</p>
-                                </div>
-                                <div class="clearfix"></div>
-                                <a class="add-re" href="#">ADD REVIEW</a>
-                            </div>
-
-                        </li>
-                        <div class="clearfix"></div>
-                    </ul>
-                </div>
                 <div class=" bottom-product">
+                <p class="tun">Other products</p>
                     <div class="col-md-4 bottom-cd simpleCart_shelfItem">
                         <div class="product-at ">
                             <a href="#"><img class="img-responsive" src="/template/images/pi3.jpg" alt="">

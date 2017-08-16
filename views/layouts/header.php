@@ -67,84 +67,36 @@
             <div class=" h_menu4">
                 <ul class="memenu skyblue">
                     <li class="active grid"><a class="color8" href="index.html">Home</a></li>
-                    <li><a class="color1" href="#">Men</a>
+                    <li><a class="color1" href="#">Power Tools</a>
                         <div class="mepanel">
                             <div class="row">
                                 <div class="col1">
                                     <div class="h_nav">
                                         <ul>
-                                            <li><a href="products.html">Accessories</a></li>
-                                            <li><a href="products.html">Bags</a></li>
-                                            <li><a href="products.html">Caps & Hats</a></li>
-                                            <li><a href="products.html">Hoodies & Sweatshirts</a></li>
-                                            <li><a href="products.html">Jackets & Coats</a></li>
-                                            <li><a href="products.html">Jeans</a></li>
+                                            <li><a href="products.html">Hammer Drills</a></li>
+                                            <li><a href="products.html">Cordless Drills</a></li>
+                                            <li><a href="products.html">Drills</a></li>
+                                            <li><a href="products.html">Grinders</a></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col1">
                                     <div class="h_nav">
                                         <ul>
-                                            <li><a href="products.html">Shirts</a></li>
-                                            <li><a href="products.html">Shoes</a></li>
-                                            <li><a href="products.html">Shorts</a></li>
-                                            <li><a href="products.html">Suits & Blazers</a></li>
-                                            <li><a href="products.html">Sunglasses</a></li>
-                                            <li><a href="products.html">T-Shirts</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col1">
-                                    <div class="h_nav">
-                                        <h4>Popular Brands</h4>
-                                        <ul>
-                                            <li><a href="products.html">Levis</a></li>
-                                            <li><a href="products.html">Nike</a></li>
-                                            <li><a href="products.html">New Balance</a></li>
-                                            <li><a href="products.html">Jack & Jones</a></li>
-                                            <li><a href="products.html">Ray-Ban</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="grid"><a class="color2" href="#"> Women</a>
-                        <div class="mepanel">
-                            <div class="row">
-                                <div class="col1">
-                                    <div class="h_nav">
-                                        <ul>
-                                            <li><a href="products.html">Accessories</a></li>
-                                            <li><a href="products.html">Bags</a></li>
-                                            <li><a href="products.html">Caps & Hats</a></li>
-                                            <li><a href="products.html">Hoodies & Sweatshirts</a></li>
-                                            <li><a href="products.html">Jackets & Coats</a></li>
-                                            <li><a href="products.html">Jeans</a></li>
+                                            <li><a href="products.html">Circular Saws</a></li>
+                                            <li><a href="products.html">Saws</a></li>
+                                            <li><a href="products.html">Nailers</a></li>
+                                            <li><a href="products.html">Mixing Tools</a></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col1">
                                     <div class="h_nav">
                                         <ul>
-                                            <li><a href="products.html">Shirts</a></li>
-                                            <li><a href="products.html">Shoes</a></li>
-                                            <li><a href="products.html">Shorts</a></li>
-                                            <li><a href="products.html">Suits & Blazers</a></li>
-                                            <li><a href="products.html">Sunglasses</a></li>
-                                            <li><a href="products.html">T-Shirts</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col1">
-                                    <div class="h_nav">
-                                        <h4>Popular Brands</h4>
-                                        <ul>
-                                            <li><a href="products.html">Levis</a></li>
-                                            <li><a href="products.html">Nike</a></li>
-                                            <li><a href="products.html">New Balance</a></li>
-                                            <li><a href="products.html">Jack & Jones</a></li>
-                                            <li><a href="products.html">Ray-Ban</a></li>
+                                            <li><a href="products.html">Multi Tools</a></li>
+                                            <li><a href="products.html">Sanders</a></li>
+                                            <li><a href="products.html">Vacuums</a></li>
+                                            <li><a href="products.html">Welders</a></li>
                                         </ul>
                                     </div>
                                 </div>

@@ -11,7 +11,9 @@
                     </div>
                     <ul class="menu">
                             <ul class="cute">
-                                <li class="subitem1"><a href="#">Hammer Drills</a></li>
+                                <?php foreach ($categories as $categoryItem): ?>
+                                <li class="subitem1"><a href="/category/<?php echo $categoryItem['id'];?>"><?php echo $categoryItem['name'];?></a></li>
+                                <?php endforeach; ?>
                                 <li class="subitem2"><a href="#">Cordless Drills</a></li>
                                 <li class="subitem3"><a href="#">Drills</a></li>
                                 <li class="subitem4"><a href="#">Grinders</a></li>

@@ -12,7 +12,7 @@
         </script>
         <div class="rslides">
             <li>
-                <a href="single.html"><img src="/template/images/1.jpg" alt="">
+                <a href="/catalog/"><img src="/template/images/1.jpg" alt="">
                     <div class="banner-text">
                         <h3>Circular Saws</h3>
                         <p>Durable circular saws.</p>
@@ -20,7 +20,7 @@
                 </a>
             </li>
             <li>
-                <a href="single.html"><img src="/template/images/2.jpg" alt="">
+                <a href="/catalog/"><img src="/template/images/2.jpg" alt="">
                     <div class="banner-text">
                         <h3>Hammer Drils</h3>
                         <p>Power hammer drils.</p>
@@ -28,7 +28,7 @@
                 </a>
             </li>
             <li>
-                <a href="single.html"><img src="/template/images/3.jpg" alt="">
+                <a href="/catalog/"><img src="/template/images/3.jpg" alt="">
                     <div class="banner-text">
                         <h3>Grinders</h3>
                         <p>High-quality grinders.</p>
@@ -42,16 +42,16 @@
     <div class="content">
         <div class="container">
             <div class="content-top">
-                <h1>POWER TOOLS</h1>
+                <h1>CATALOG</h1>
                 <div class="grid-in">
                     <?php foreach ($categories as $categoryItem): ?>
                     <div class="col-md-4 grid-top">
-                        <a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive"
-                                                                                                src="/template/images/pi1.jpg"
+                        <a href="/category/<?php echo $categoryItem['id'];?>" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive"
+                                                                                                src="<?php echo $categoryItem['image'];?>"
                                                                                                 alt="">
                             <div class="b-wrapper">
                                 <h3 class="b-animate b-from-left    b-delay03 ">
-                                    <span>Hammer drills</span>
+                                    <span><?php echo $categoryItem['name'];?></span>
                                 </h3>
                             </div>
                         </a>

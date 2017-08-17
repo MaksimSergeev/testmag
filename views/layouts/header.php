@@ -40,11 +40,11 @@
             </div>
             <div class="header-left">
                 <ul>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="register.html">Register</a></li>
+                    <li><a href="/login/">Login</a></li>
+                    <li><a href="/register/">Register</a></li>
                 </ul>
                 <div class="cart box_1">
-                    <a href="checkout.html">
+                    <a href="/cart/">
                         <h3>
                             <div class="total">
                                 <span class="simpleCart_total"></span> (<span id="simpleCart_quantity"
@@ -62,49 +62,14 @@
     <div class="container">
         <div class="head-top">
             <div class="logo">
-                <a href="index.html"><img src="/template/images/logo.png" alt=""></a>
+                <a href=""><img src="/template/images/logo.png" alt=""></a>
             </div>
             <div class=" h_menu4">
                 <ul class="memenu skyblue">
-                    <li class="active grid"><a class="color8" href="index.html">Home</a></li>
-                    <li><a class="color1" href="#">Power Tools</a>
-                        <div class="mepanel">
-                            <div class="row">
-                                <div class="col1">
-                                    <div class="h_nav">
-                                        <ul>
-                                            <li><a href="products.html">Hammer Drills</a></li>
-                                            <li><a href="products.html">Cordless Drills</a></li>
-                                            <li><a href="products.html">Drills</a></li>
-                                            <li><a href="products.html">Grinders</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col1">
-                                    <div class="h_nav">
-                                        <ul>
-                                            <li><a href="products.html">Circular Saws</a></li>
-                                            <li><a href="products.html">Saws</a></li>
-                                            <li><a href="products.html">Nailers</a></li>
-                                            <li><a href="products.html">Mixing Tools</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col1">
-                                    <div class="h_nav">
-                                        <ul>
-                                            <li><a href="products.html">Multi Tools</a></li>
-                                            <li><a href="products.html">Sanders</a></li>
-                                            <li><a href="products.html">Vacuums</a></li>
-                                            <li><a href="products.html">Welders</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li><a class="color4" href="blog.html">Blog</a></li>
-                    <li><a class="color6" href="contact.html">Contact</a></li>
+                    <li class="active grid"><a class="color8" href="">Home</a></li>
+                    <li><a class="color1" href="/catalog/">Catalog</a></li>
+                    <li><a class="color4" href="/blog/">Blog</a></li>
+                    <li><a class="color6" href="/contacts/">Contacts</a></li>
                 </ul>
             </div>
             <div class="clearfix"></div>

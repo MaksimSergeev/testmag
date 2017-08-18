@@ -2,6 +2,7 @@
 
 include_once ROOT . '/models/Category.php';
 
+
 class SiteController
 {
     public function actionIndex()

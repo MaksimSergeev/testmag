@@ -10,9 +10,11 @@
                         <h3 class="cate">Categories</h3>
                     </div>
                     <ul class="menu">
-
-                        <li class="subitem1"><a href="single.html">Cute Kittens </a></li>
-
+                        <ul class="cute">
+                            <?php foreach ($categories as $categoryItem): ?>
+                                <li class="subitem1"><a href="/category/<?php echo $categoryItem['id'];?>"><?php echo $categoryItem['name'];?></a></li>
+                            <?php endforeach; ?>
+                        </ul>
                     </ul>
                 </div>
 
@@ -52,17 +54,19 @@
             </div>
             <div class="col-md-9 product1">
                 <div class=" bottom-product">
+                    <?php foreach ($latestProducts as $productItem): ?>
                     <div class="col-md-4 bottom-cd simpleCart_shelfItem">
                         <div class="product-at ">
-                            <a href="single.html"><img class="img-responsive" src="images/pi3.jpg" alt="">
+                            <a href="/product/<?php echo $productItem['id'];?>"><img class="img-responsive" src="<?php echo $productItem['image'];?>" alt="">
                                 <div class="pro-grid">
                                     <span class="buy-in">Buy Now</span>
                                 </div>
                             </a>
                         </div>
-                        <p class="tun">It is a long established fact that a reader</p>
-                        <a href="#" class="item_add"><p class="number item_price"><i> </i>$500.00</p></a>
+                        <p class="tun"><?php echo $subname = mb_substr($productItem['name'], 0, 30, 'UTF-8').'...';?></p>
+                        <a href="/cart/" class="item_add"><p class="number item_price"><i> </i>$<?php echo $productItem['price'];?></p></a>
                     </div>
+                    <?php endforeach; ?>
                     <div class="clearfix"></div>
                 </div>
 

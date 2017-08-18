@@ -62,11 +62,11 @@
     <div class="container">
         <div class="head-top">
             <div class="logo">
-                <a href=""><img src="/template/images/logo.png" alt=""></a>
+                <a href="/"><img src="/template/images/logo.png" alt=""></a>
             </div>
             <div class=" h_menu4">
                 <ul class="memenu skyblue">
-                    <li class="active grid"><a class="color8" href="">Home</a></li>
+                    <li class="active grid"><a class="color8" href="/">Home</a></li>
                     <li><a class="color1" href="/catalog/">Catalog</a></li>
                     <li><a class="color4" href="/blog/">Blog</a></li>
                     <li><a class="color6" href="/contacts/">Contacts</a></li>

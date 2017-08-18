@@ -7,10 +7,12 @@ class CatalogController
     public function actionIndex()
     {
         $categories = array();
-        $categories = Product::getLatestProducts();
+        $categories = Category::getCategoriesList();
+
+        $latestProducts = array();
+        $latestProducts = Product::getLatestProducts();
         require_once (ROOT . '/views/catalog/index.php');
         return true;
     }
-
 
 }

@@ -14,17 +14,6 @@
                                 <?php foreach ($categories as $categoryItem): ?>
                                 <li class="subitem1"><a href="/category/<?php echo $categoryItem['id'];?>"><?php echo $categoryItem['name'];?></a></li>
                                 <?php endforeach; ?>
-                                <li class="subitem2"><a href="#">Cordless Drills</a></li>
-                                <li class="subitem3"><a href="#">Drills</a></li>
-                                <li class="subitem4"><a href="#">Grinders</a></li>
-                                <li class="subitem5"><a href="#">Circular Saws</a></li>
-                                <li class="subitem6"><a href="#">Saws</a></li>
-                                <li class="subitem7"><a href="#">Nailers</a></li>
-                                <li class="subitem8"><a href="#">Mixing Tools</a></li>
-                                <li class="subitem9"><a href="#">Multi Tools</a></li>
-                                <li class="subitem10"><a href="#">Sanders</a></li>
-                                <li class="subitem11"><a href="#">Vacuums</a></li>
-                                <li class="subitem12"><a href="#">Welders</a></li>
                             </ul>
                     </ul>
                 </div>

@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 //Component for work with routes
 class Router
 {
@@ -19,6 +20,36 @@ class Router
 
     
     //Returns the query string
+=======
+/**
+ * Класс Router
+ * Компонент для работы с маршрутами
+ */
+class Router
+{
+
+    /**
+     * Свойство для хранения массива роутов
+     * @var array 
+     */
+    private $routes;
+
+    /**
+     * Конструктор
+     */
+    public function __construct()
+    {
+        // Путь к файлу с роутами
+        $routesPath = ROOT . '/config/routes.php';
+
+        // Получаем роуты из файла
+        $this->routes = include($routesPath);
+    }
+
+    /**
+     * Возвращает строку запроса
+     */
+>>>>>>> parent of 758e53e... 5
     private function getURI()
     {
         if (!empty($_SERVER['REQUEST_URI'])) {
@@ -26,6 +57,7 @@ class Router
         }
     }
 
+<<<<<<< HEAD
     //Method for request processing
     public function run()
     {
@@ -42,6 +74,26 @@ class Router
                 $internalRoute = preg_replace("~$uriPattern~", $path, $uri);
 
                 // Identify controller, action, parameters
+=======
+    /**
+     * Метод для обработки запроса
+     */
+    public function run()
+    {
+        // Получаем строку запроса
+        $uri = $this->getURI();
+
+        // Проверяем наличие такого запроса в массиве маршрутов (routes.php)
+        foreach ($this->routes as $uriPattern => $path) {
+
+            // Сравниваем $uriPattern и $uri
+            if (preg_match("~$uriPattern~", $uri)) {
+
+                // Получаем внутренний путь из внешнего согласно правилу.
+                $internalRoute = preg_replace("~$uriPattern~", $path, $uri);
+
+                // Определить контроллер, action, параметры
+>>>>>>> parent of 758e53e... 5
 
                 $segments = explode('/', $internalRoute);
 
@@ -52,7 +104,11 @@ class Router
 
                 $parameters = $segments;
 
+<<<<<<< HEAD
                 // Connect the controller class file
+=======
+                // Подключить файл класса-контроллера
+>>>>>>> parent of 758e53e... 5
                 $controllerFile = ROOT . '/controllers/' .
                         $controllerName . '.php';
 
@@ -60,6 +116,7 @@ class Router
                     include_once($controllerFile);
                 }
 
+<<<<<<< HEAD
                 // Create object, call method (action)
                 $controllerObject = new $controllerName;
 
@@ -67,6 +124,17 @@ class Router
                 $result = call_user_func_array(array($controllerObject, $actionName), $parameters);
 
                 // If the controller method is successfully called, we terminate the router
+=======
+                // Создать объект, вызвать метод (т.е. action)
+                $controllerObject = new $controllerName;
+
+                /* Вызываем необходимый метод ($actionName) у определенного 
+                 * класса ($controllerObject) с заданными ($parameters) параметрами
+                 */
+                $result = call_user_func_array(array($controllerObject, $actionName), $parameters);
+
+                // Если метод контроллера успешно вызван, завершаем работу роутера
+>>>>>>> parent of 758e53e... 5
                 if ($result != null) {
                     break;
                 }

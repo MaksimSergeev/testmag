@@ -21,7 +21,7 @@
                 <!---->
                 <div class="product-bottom">
                     <div class="of-left-in">
-                        <h3 class="best">Best Sellers</h3>
+                        <h3 class="best">Recommended</h3>
                     </div>
                     <div class="product-go">
                         <div class=" fashion-grid">

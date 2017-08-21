@@ -54,18 +54,18 @@
             </div>
             <div class="col-md-9 product1">
                 <div class=" bottom-product">
-                    <?php foreach ($latestProducts as $product): ?>
-                    <div class="col-md-4 bottom-cd simpleCart_shelfItem">
-                        <div class="product-at ">
-                            <a href="/product/<?php echo $product['id'];?>"><img class="img-responsive" src="<?php echo $product['image'];?>" alt="">
-                                <div class="pro-grid">
-                                    <span class="buy-in">Buy Now</span>
-                                </div>
-                            </a>
+                    <?php foreach ($categoryProducts as $product): ?>
+                        <div class="col-md-4 bottom-cd simpleCart_shelfItem">
+                            <div class="product-at ">
+                                <a href="/product/<?php echo $product['id'];?>"><img class="img-responsive" src="<?php echo $product['image'];?>" alt="">
+                                    <div class="pro-grid">
+                                        <span class="buy-in">Buy Now</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <p class="tun"><?php echo $subname = mb_substr($product['name'], 0, 30, 'UTF-8').'...';?></p>
+                            <a href="" class="item_add"><p class="number item_price"><i> </i>$<?php echo $product['price'];?></p></a>
                         </div>
-                        <p class="tun"><?php echo $subname = mb_substr($product['name'], 0, 30, 'UTF-8').'...';?></p>
-                        <a href="" class="item_add"><p class="number item_price"><i> </i>$<?php echo $product['price'];?></p></a>
-                    </div>
                     <?php endforeach; ?>
                     <div class="clearfix"></div>
                 </div>

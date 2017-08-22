@@ -1,4 +1,4 @@
-<?php include ROOT.'/views/layouts/header.php'; ?>
+<?php include ROOT . '/views/layouts/header.php'; ?>
 
     <!--content-->
     <div class="product">
@@ -10,11 +10,13 @@
                         <h3 class="cate">Categories</h3>
                     </div>
                     <ul class="menu">
-                            <ul class="cute">
-                                <?php foreach ($categories as $categoryItem): ?>
-                                <li class="subitem1"><a href="/category/<?php echo $categoryItem['id'];?>"><?php echo $categoryItem['name'];?></a></li>
-                                <?php endforeach; ?>
-                            </ul>
+                        <ul class="cute">
+                            <?php foreach ($categories as $categoryItem): ?>
+                                <li>
+                                    <a href="/category/<?php echo $categoryItem['id']; ?>"><?php echo $categoryItem['name']; ?></a>
+                                </li>
+                            <?php endforeach; ?>
+                        </ul>
                     </ul>
                 </div>
 
@@ -31,7 +33,7 @@
                         <div class=" fashion-grid1">
                             <h6 class="best2"><a href="#">Lorem ipsum dolor sit amet consectetuer </a></h6>
 
-                            <span class=" price-in1"> $39.99</span>
+                            <span class=" price-in1"> $37</span>
                         </div>
 
                         <div class="clearfix"></div>
@@ -44,7 +46,7 @@
                         <div class="fashion-grid1">
                             <h6 class="best2"><a href="#">Lorem ipsum dolor sit amet consectetuer </a></h6>
 
-                            <span class=" price-in1"> $29.99</span>
+                            <span class=" price-in1"> $29</span>
                         </div>
 
                         <div class="clearfix"></div>
@@ -55,17 +57,11 @@
                 <div class="col-md-5 single-top">
                     <div class="flexslider">
                         <ul class="slides">
-                            <li data-thumb="/template/images/si.jpg">
-                                <img src="/template/images/si.jpg"/>
+                            <li data-thumb="<?php echo $productItem['image']; ?>">
+                                <img src="<?php echo $productItem['image']; ?>"/>
                             </li>
-                            <li data-thumb="/template/images/si1.jpg">
-                                <img src="/template/images/si1.jpg"/>
-                            </li>
-                            <li data-thumb="/template/images/si2.jpg">
-                                <img src="/template/images/si2.jpg"/>
-                            </li>
-                            <li data-thumb="/template/images/si.jpg">
-                                <img src="/template/images/si.jpg"/>
+                            <li data-thumb="<?php echo $productItem['image']; ?>">
+                                <img src="<?php echo $productItem['image']; ?>"/>
                             </li>
                         </ul>
                     </div>
@@ -84,18 +80,16 @@
                     </script>
                 </div>
                 <div class="col-md-7 single-top-in simpleCart_shelfItem">
-                    <div class="single-para ">
-                        <h4>Lorem Ipsum</h4>
+                    <div class="single-para">
+                        <h4><?php echo $productItem['name']; ?></h4>
                         <div class="star-on">
-
+                            <h6>Product code: <?php echo $productItem['code']; ?></h6>
                             <div class="clearfix"></div>
                         </div>
-
-                        <h5 class="item_price">$ 95.00</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
-                            ut laoreet dolore magna aliquam erat dvsdgdsg dhyjytjyt rhrehtrhr trhrthrthrt</p>
-                                <div class="clearfix"></div>
-                            </ul>
+                        <h5 class="item_price">$<?php echo $productItem['price']; ?></h5>
+                        <p><?php echo $productItem['description']; ?></p>
+                        <div class="clearfix"></div>
+                        </ul>
                         <a href="#" class="add-cart item_add">ADD TO CART</a>
 
                     </div>
@@ -103,41 +97,26 @@
                 <div class="clearfix"></div>
                 <hr>
                 <!---->
-   
+
 
                 <div class=" bottom-product">
-                <p class="tun">Other products</p>
-                    <div class="col-md-4 bottom-cd simpleCart_shelfItem">
-                        <div class="product-at ">
-                            <a href="#"><img class="img-responsive" src="/template/images/pi3.jpg" alt="">
-                                <div class="pro-grid">
-                                    <span class="buy-in">Buy Now</span>
-                                </div>
-                            </a>
+                    <p class="tun2">New products</p>
+                    <?php foreach ($newProducts as $new): ?>
+                        <div class="col-md-4 bottom-cd simpleCart_shelfItem">
+                            <div class="product-at ">
+                                <a href="/product/<?php echo $new['id']; ?>"><img class="img-responsive"
+                                                                                  src="<?php echo $new['image']; ?>"
+                                                                                  alt="">
+                                    <div class="pro-grid">
+                                        <span class="buy-in">Buy Now</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <p class="tun"><?php echo $subname = mb_substr($new['name'], 0, 30, 'UTF-8') . '...'; ?></p>
+                            <a href="#" class="item_add"><p class="number item_price">
+                                    $<?php echo $new['price']; ?></p></a>
                         </div>
-                        <p class="tun">It is a long established fact that a reader</p>
-                        <a href="#" class="item_add"><p class="number item_price"><i> </i>$500.00</p></a>
-                    </div>
-                    <div class="col-md-4 bottom-cd simpleCart_shelfItem">
-                        <div class="product-at ">
-                            <a href="#"><img class="img-responsive" src="/template/images/pi1.jpg" alt="">
-                                <div class="pro-grid">
-                                    <span class="buy-in">Buy Now</span>
-                                </div>
-                            </a>
-                        </div>
-                        <p class="tun">It is a long established fact that a reader</p>
-                        <a href="#" class="item_add"><p class="number item_price"><i> </i>$500.00</p></a></div>
-                    <div class="col-md-4 bottom-cd simpleCart_shelfItem">
-                        <div class="product-at ">
-                            <a href="#"><img class="img-responsive" src="/template/images/pi4.jpg" alt="">
-                                <div class="pro-grid">
-                                    <span class="buy-in">Buy Now</span>
-                                </div>
-                            </a>
-                        </div>
-                        <p class="tun">It is a long established fact that a reader</p>
-                        <a href="#" class="item_add"><p class="number item_price"><i> </i>$500.00</p></a></div>
+                    <?php endforeach; ?>
                     <div class="clearfix"></div>
                 </div>
             </div>
@@ -147,4 +126,4 @@
     </div>
     <!--//content-->
 
-<?php include ROOT.'/views/layouts/footer.php'; ?>
+<?php include ROOT . '/views/layouts/footer.php'; ?>

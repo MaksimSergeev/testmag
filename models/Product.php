@@ -46,4 +46,38 @@ class Product
             return $products;
         }
     }
+
+    public static function getProductById($id)
+    {
+        $id = intval($id);
+
+        if($id) {
+
+            $db = Db::getConnection();
+            $result = $db->query("SELECT * FROM product WHERE id = '$id' ");
+            $result->setFetchMode(PDO::FETCH_ASSOC);
+
+            return $result->fetch();
+        }
+    }
+
+    public static function getNewProducts($count = self::SHOW_BY_DEFAULT)
+    {
+        $count = intval($count);
+        $db = Db::getConnection();
+        $newProducts = array();
+
+        $result = $db->query('SELECT id, name, price, image, is_new FROM product WHERE status="1"'
+            . ' and is_new="1" ORDER BY id DESC LIMIT '. $count);
+
+        $i = 0;
+        while ($row = $result->fetch()) {
+            $newProducts[$i]['id'] = $row['id'];
+            $newProducts[$i]['name'] = $row['name'];
+            $newProducts[$i]['image'] = $row['image'];
+            $newProducts[$i]['price'] = $row['price'];
+            $i++;
+        }
+        return $newProducts;
+    }
 }

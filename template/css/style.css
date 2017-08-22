@@ -23,7 +23,12 @@ ul{
 h1,h2,h3,h4,h5,h6,label,p{
 	margin:0;	
 }
+
 /*----*/
+.active {
+	background: none;
+	color: #EF5F21 !important;
+}
 .itemContainer{
 			width:100%;
 			float:left;
@@ -1065,10 +1070,15 @@ a.item_add p.number i{
 }
 p.tun{
 	font-size:1em;
-	  color: #949494;
   text-align: center;
   line-height: 1.3em;
   padding: 1em 0;
+}
+p.tun2{
+	font-size:1.3em;
+	text-align: center;
+	line-height: 1.3em;
+	padding: 1em 0;
 }
 
 .product-at{
@@ -1116,7 +1126,7 @@ p.tun{
 }
 .single-para h4 {
     color: #000;
-  font-size: 3em;
+  font-size: 1.5em;
   font-family: 'Lato', serif;
 }
 .single-para p {

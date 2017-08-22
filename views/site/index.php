@@ -12,7 +12,7 @@
         </script>
         <div class="rslides">
             <li>
-                <a href="/catalog/"><img src="/template/images/1.jpg" alt="">
+                <a href="/category/5"><img src="/template/images/1.jpg" alt="">
                     <div class="banner-text">
                         <h3>Circular Saws</h3>
                         <p>Durable circular saws.</p>
@@ -20,7 +20,7 @@
                 </a>
             </li>
             <li>
-                <a href="/catalog/"><img src="/template/images/2.jpg" alt="">
+                <a href="/category/1"><img src="/template/images/2.jpg" alt="">
                     <div class="banner-text">
                         <h3>Hammer Drils</h3>
                         <p>Power hammer drils.</p>
@@ -28,7 +28,7 @@
                 </a>
             </li>
             <li>
-                <a href="/catalog/"><img src="/template/images/3.jpg" alt="">
+                <a href="/category/4"><img src="/template/images/3.jpg" alt="">
                     <div class="banner-text">
                         <h3>Grinders</h3>
                         <p>High-quality grinders.</p>

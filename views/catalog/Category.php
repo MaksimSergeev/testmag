@@ -11,8 +11,12 @@
                     </div>
                     <ul class="menu">
                         <ul class="cute">
-                            <?php foreach ($categories as $category): ?>
-                                <li class="subitem1"><a href="/category/<?php echo $category['id'];?>"><?php echo $category['name'];?></a></li>
+                            <?php foreach ($categories as $categoryItem): ?>
+                                <li>
+                                    <a href="/category/<?php echo $categoryItem['id'];?>"
+                                    class="<?php if ($categoryId == $categoryItem['id']) echo 'active';?>"><?php echo $categoryItem['name'];?>
+                                    </a>
+                                </li>
                             <?php endforeach; ?>
                         </ul>
                     </ul>
@@ -25,31 +29,30 @@
                     </div>
                     <div class="product-go">
                         <div class=" fashion-grid">
-                            <a href="single.html"><img class="img-responsive " src="images/p1.jpg" alt=""></a>
+                            <a href="#"><img class="img-responsive " src="/template/images/p1.jpg" alt=""></a>
 
                         </div>
                         <div class=" fashion-grid1">
-                            <h6 class="best2"><a href="single.html">Lorem ipsum dolor sitamet consectetuer </a></h6>
+                            <h6 class="best2"><a href="#">Lorem ipsum dolor sit amet consectetuer </a></h6>
 
-                            <span class=" price-in1"> $40.00</span>
+                            <span class=" price-in1"> $37</span>
                         </div>
 
                         <div class="clearfix"></div>
                     </div>
                     <div class="product-go">
                         <div class=" fashion-grid">
-                            <a href="single.html"><img class="img-responsive " src="images/p2.jpg" alt=""></a>
+                            <a href="#"><img class="img-responsive " src="/template/images/p2.jpg" alt=""></a>
 
                         </div>
                         <div class="fashion-grid1">
-                            <h6 class="best2"><a href="single.html">Lorem ipsum dolor sitamet consectetuer </a></h6>
+                            <h6 class="best2"><a href="#">Lorem ipsum dolor sit amet consectetuer </a></h6>
 
-                            <span class=" price-in1"> $40.00</span>
+                            <span class=" price-in1"> $29</span>
                         </div>
 
                         <div class="clearfix"></div>
                     </div>
-
                 </div>
             </div>
             <div class="col-md-9 product1">

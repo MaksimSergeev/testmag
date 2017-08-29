@@ -54,6 +54,7 @@
                         <div class="clearfix"></div>
                     </div>
                 </div>
+                <hr>
             </div>
             <div class="col-md-9 product1">
                 <div class=" bottom-product">
@@ -72,7 +73,6 @@
                     <?php endforeach; ?>
                     <div class="clearfix"></div>
                 </div>
-
             </div>
             <div class="clearfix"></div>
             <nav class="in">

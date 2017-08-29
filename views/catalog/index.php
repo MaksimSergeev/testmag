@@ -25,31 +25,30 @@
                     </div>
                     <div class="product-go">
                         <div class=" fashion-grid">
-                            <a href="single.html"><img class="img-responsive " src="images/p1.jpg" alt=""></a>
+                            <a href="#"><img class="img-responsive " src="/template/images/p1.jpg" alt=""></a>
 
                         </div>
                         <div class=" fashion-grid1">
-                            <h6 class="best2"><a href="single.html">Lorem ipsum dolor sitamet consectetuer </a></h6>
+                            <h6 class="best2"><a href="#">Lorem ipsum dolor sit amet consectetuer </a></h6>
 
-                            <span class=" price-in1"> $40.00</span>
+                            <span class=" price-in1"> $37</span>
                         </div>
 
                         <div class="clearfix"></div>
                     </div>
                     <div class="product-go">
                         <div class=" fashion-grid">
-                            <a href="single.html"><img class="img-responsive " src="images/p2.jpg" alt=""></a>
+                            <a href="#"><img class="img-responsive " src="/template/images/p2.jpg" alt=""></a>
 
                         </div>
                         <div class="fashion-grid1">
-                            <h6 class="best2"><a href="single.html">Lorem ipsum dolor sitamet consectetuer </a></h6>
+                            <h6 class="best2"><a href="#">Lorem ipsum dolor sit amet consectetuer </a></h6>
 
-                            <span class=" price-in1"> $40.00</span>
+                            <span class=" price-in1"> $29</span>
                         </div>
 
                         <div class="clearfix"></div>
                     </div>
-
                 </div>
             </div>
             <div class="col-md-9 product1">

@@ -613,11 +613,14 @@ padding:1em 0 0;
 background: #fff;
 color:#EF5F21;
 }
+div.social ul{
+	padding-bottom: 10px;
+}
 ul.social{
 	padding:1em 0 0;
 }
 ul.social li{
-	display: inline-block;	
+	display: inline-block;
 }
 ul.social li i{
 	background: url(../images/img-sprite.png)no-repeat -9px -14px ;
@@ -629,9 +632,6 @@ ul.social li i{
 }
 ul.social li  i.twitter{
 	background-position:  -43px -14px;
-}
-ul.social li  i.rss{
-	background-position: -77px -14px;
 }
 ul.social li  i.gmail{
 	background-position:-110px -14px;
@@ -1957,10 +1957,7 @@ h6.best2 {
 	width:100%;
 }
 /*--product--*/
-.bottom-cd{
-float:left;
-width:33.3%;
-}
+
 .product-price {
   width: 50%;
 }

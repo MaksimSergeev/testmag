@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>TestMag | Home</title>
+    <title>TestMag</title>
     <link href="/template/css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
     <script src="/template/js/jquery.min.js"></script>
     <!-- Custom Theme files -->
@@ -68,7 +68,6 @@
                 <ul class="memenu skyblue">
                     <li class="active grid"><a class="color2" href="/">Home</a></li>
                     <li><a class="color1" href="/catalog/">Catalog</a></li>
-                    <li><a class="color4" href="/blog/">Blog</a></li>
                     <li><a class="color6" href="/contacts/">Contacts</a></li>
                 </ul>
             </div>

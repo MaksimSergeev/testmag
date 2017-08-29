@@ -52,6 +52,9 @@
                 </div>
             </div>
             <div class="col-md-9 product1">
+                <div class="items-box">
+                    <h3 class="cate">Last products</h3>
+                </div>
                 <div class=" bottom-product">
                     <?php foreach ($latestProducts as $product): ?>
                     <div class="col-md-4 bottom-cd simpleCart_shelfItem">
@@ -72,15 +75,7 @@
             </div>
             <div class="clearfix"></div>
             <nav class="in">
-                <ul class="pagination">
-                    <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
-                    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">2 <span class="sr-only"></span></a></li>
-                    <li><a href="#">3 <span class="sr-only"></span></a></li>
-                    <li><a href="#">4 <span class="sr-only"></span></a></li>
-                    <li><a href="#">5 <span class="sr-only"></span></a></li>
-                    <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span> </a></li>
-                </ul>
+                <?php echo $pagination->get();?>
             </nav>
         </div>
 

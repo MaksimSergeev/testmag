@@ -54,6 +54,9 @@
                 </div>
             </div>
             <div class="col-md-9 product-price1">
+                <div class="of-left1">
+                    <h3 class="cate">Product</h3>
+                </div>
                 <div class="col-md-5 single-top">
                     <div class="flexslider">
                         <ul class="slides">

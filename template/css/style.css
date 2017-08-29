@@ -862,6 +862,16 @@ h3.cate {
 .of-left{
 	 border-bottom: 1px solid #000;
 }
+.of-left1{
+	border-bottom: 1px solid #000;
+	margin-bottom: 25px;
+}
+.items-box{
+	border-bottom: 1px solid #000;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 25px;
+}
 .product-go {
   margin-top: 2em;
 }

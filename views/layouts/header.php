@@ -3,9 +3,10 @@
 
 <head>
     <title>TestMag</title>
-    <link href="/template/css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
-    <script src="/template/js/jquery.min.js"></script>
-    <!-- Custom Theme files -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--  <link href="/template/css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/> -->
+     <script src="/template/js/jquery.min.js"></script>
+     <!-- Custom Theme files -->
     <!--theme-style-->
     <link href="/template/css/style.css" rel="stylesheet" type="text/css" media="all"/>
     <!--//theme-style-->
@@ -40,8 +41,8 @@
             </div>
             <div class="header-left">
                 <ul>
-                    <li><a href="/login/">Login</a></li>
-                    <li><a href="/register/">Register</a></li>
+                    <li><a href="/user/login/">Login</a></li>
+                    <li><a href="/user/register/">Register</a></li>
                 </ul>
                 <div class="cart box_1">
                     <a href="/cart/">
@@ -68,7 +69,7 @@
                 <ul class="memenu skyblue">
                     <li class="active grid"><a class="color2" href="/">Home</a></li>
                     <li><a class="color1" href="/catalog/">Catalog</a></li>
-                    <li><a class="color6" href="/contacts/">Contacts</a></li>
+                    <li><a class="color6" href="/contact/">Contact</a></li>
                 </ul>
             </div>
             <div class="clearfix"></div>

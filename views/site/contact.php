@@ -17,7 +17,7 @@
                            onblur="if (this.value == '') {this.value ='Subject';}">
 
                     <textarea cols="77" rows="6" value=" " onfocus="this.value='';"
-                              onblur="if (this.value == '') {this.value = 'Message';}">Message</textarea>
+                              onblur="if (this.value == '') {this.value = '';}">Sorry, sending mail not work on this free host :(</textarea>
                     <div class="send">
                         <input type="submit" class="pull-right" value="Send">
                     </div>

@@ -8,12 +8,10 @@
                 <div class="col-md-offset-3 col-md-6 account-top">
                     <form>
                         <div>
-                            <span>Email</span>
-                            <input type="text">
+                            <input placeholder="Email" type="text">
                         </div>
                         <div>
-                            <span >Password</span>
-                            <input type="password">
+                            <input placeholder="Password" type="password">
                         </div>
                         <input type="submit" class="pull-right" value="Login">
                     </form>

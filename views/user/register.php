@@ -4,28 +4,24 @@
 <div class=" container">
     <div class=" register">
         <h1>Register</h1>
-        <form>
+        <form action="#" method="post">
+
             <div class="col-md-offset-3 col-md-6 register-top-grid">
                 <div>
-                    <span>Name/Login</span>
-                    <input type="text">
+                    <input type="text" name="name" placeholder="Name" value="<?php echo $name; ?>">
                 </div>
                 <div>
-                    <span>Email Address</span>
-                    <input type="text">
+                    <input type="email" name="email" placeholder="Email Address" value="<?php echo $email; ?>">
                 </div>
             </div>
             <div class="col-md-offset-3 col-md-6 register-bottom-grid">
                 <div>
-                    <span>Password</span>
-                    <input type="password">
+                    <input type="password" name="password" placeholder="Password" value="<?php echo $password; ?>">
                 </div>
                 <div>
-                    <span>Confirm Password</span>
-                    <input type="password">
+                    <input type="password" name="conf_password" placeholder="Confirm Password" value="<?php echo $password; ?>">
                 </div>
-                <input type="submit" value="submit" class="pull-right">
-
+                <input type="submit" name="submit" value="Submit" class="pull-right">
             </div>
             <div class="clearfix"> </div>
         </form>

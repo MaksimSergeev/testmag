@@ -31,7 +31,7 @@ class Product
 
     public static function getProductListByCategory($categoryId = false, $page = 1)
     {
-        if($categoryId) {
+        if ($categoryId) {
 
             $page = intval($page);
             $offset = ($page - 1) * self::SHOW_BY_DEFAULT;
@@ -60,7 +60,7 @@ class Product
     {
         $id = intval($id);
 
-        if($id) {
+        if ($id) {
 
             $db = Db::getConnection();
             $result = $db->query("SELECT * FROM product WHERE id = '$id' ");

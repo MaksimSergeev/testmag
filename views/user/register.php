@@ -3,6 +3,12 @@
 <!--content-->
 <div class=" container">
     <div class=" register">
+        <?php if ($result): ?>
+            <div class="register-complite" style="">
+                <h1>Registration complite!</h1>
+                <h3>Now you can login as a user.</h3>
+            </div>
+        <?php else: ?>
         <h1>Register</h1>
         <form action="#" method="post">
 
@@ -25,6 +31,16 @@
             </div>
             <div class="clearfix"> </div>
         </form>
+        <div class="col-md-offset-3 col-md-6 reg-errors">
+            <?php if (isset($errors) && is_array($errors)): ?>
+                <ul>
+                    <?php foreach ($errors as $error):?>
+                    <li><?php echo $error; ?></li>
+                    <?php endforeach; ?>
+                </ul>
+            <?php endif;?>
+            <?php endif;?>
+        </div>
     </div>
 </div>
 <!--//content-->

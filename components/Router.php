@@ -1,12 +1,9 @@
 <?php
-
 //Component for work with routes
 class Router
 {
-
     //Array with routes
     private $routes;
-
 
     public function __construct()
     {
@@ -17,7 +14,6 @@ class Router
         $this->routes = include($routesPath);
     }
 
-    
     //Returns the query string
     private function getURI()
     {
@@ -42,14 +38,10 @@ class Router
                 $internalRoute = preg_replace("~$uriPattern~", $path, $uri);
 
                 // Identify controller, action, parameters
-
                 $segments = explode('/', $internalRoute);
-
                 $controllerName = array_shift($segments) . 'Controller';
                 $controllerName = ucfirst($controllerName);
-
                 $actionName = 'action' . ucfirst(array_shift($segments));
-
                 $parameters = $segments;
 
                 // Connect the controller class file

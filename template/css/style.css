@@ -28,6 +28,21 @@ h1, h2, h3, h4, h5, h6, label, p {
 }
 
 /*----*/
+
+.reg-errors {
+    padding-left: 12%;
+}
+.reg-errors ul {
+    color: red;
+}
+.register-complite {
+    padding-top: 6em;
+    padding-bottom: 17em;
+}
+.register-complite h3 {
+    text-align: center;
+}
+
 .active {
     background: none;
     color: #EF5F21 !important;
@@ -2881,7 +2896,10 @@ ul.qty li p {
     .top-in2 {
         min-height: 81px;
     }
+
     .spctofoot {
         min-height: 25%;
     }
+
+
 

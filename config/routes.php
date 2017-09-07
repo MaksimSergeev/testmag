@@ -10,6 +10,7 @@ return array(
     'index.php' => 'site/index', // actionIndex in SiteController
     'user/login' => 'user/login', // actionLogin in UserController
     'user/register' => 'user/register', // actionRegister in UserController
+    'cabinet' => 'cabinet/index', // actionIndex in CabinetController
     '' => 'site/index', // actionIndex in SiteController
 
 );

@@ -25,32 +25,19 @@
                     <div class="of-left-in">
                         <h3 class="best">Recommended</h3>
                     </div>
-                    <div class="product-go">
-                        <div class=" fashion-grid">
-                            <a href="#"><img class="img-responsive " src="/template/images/p1.jpg" alt=""></a>
+                    <?php foreach ($recommendedProducts as $recommended): ?>
+                        <div class="product-go">
+                            <div class=" fashion-grid">
+                                <a href="/product/<?php echo $recommended['id']; ?>"><img class="img-responsive " src="<?php echo $recommended['image']; ?>" alt=""></a>
+                            </div>
+                            <div class=" fashion-grid1">
+                                <h6 class="best2"><a href="/product/<?php echo $recommended['id']; ?>"><?php echo $subname = mb_substr($recommended['name'], 0, 30, 'UTF-8') . '...'; ?></a></h6>
 
+                                <span class=" price-in1">$<?php echo $recommended['price']; ?></span>
+                            </div>
+                            <div class="clearfix"></div>
                         </div>
-                        <div class=" fashion-grid1">
-                            <h6 class="best2"><a href="#">Lorem ipsum dolor sit amet consectetuer </a></h6>
-
-                            <span class=" price-in1"> $37</span>
-                        </div>
-
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="product-go">
-                        <div class=" fashion-grid">
-                            <a href="#"><img class="img-responsive " src="/template/images/p2.jpg" alt=""></a>
-
-                        </div>
-                        <div class="fashion-grid1">
-                            <h6 class="best2"><a href="#">Lorem ipsum dolor sit amet consectetuer </a></h6>
-
-                            <span class=" price-in1"> $29</span>
-                        </div>
-
-                        <div class="clearfix"></div>
-                    </div>
+                    <?php endforeach; ?>
                 </div>
             </div>
             <div class="col-md-9 product-price1">

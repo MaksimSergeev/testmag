@@ -27,14 +27,14 @@ class UserController
                 $errors[] = 'Email incorrect!';
             }
             // Check password
-            if (!User::checkPassword($password, $conf_password)) {
+            if (!User::checkDoublePassword($password, $conf_password)) {
                 $errors[] = 'Passwords no equality or less than six words!';
             }
             // Check email exists
             if (User::checkEmailExists($email)) {
                 $errors[] = 'This email is already in use by another user!';
             }
-            // Register and return: true/false
+            // Register return: true/false
             if ($errors == false) {
                 $result = User::register($name, $email, $password);
             }
@@ -45,6 +45,36 @@ class UserController
     }
     public static function actionLogin()
     {
+        $email = '';
+        $password = '';
+
+        if (isset($_POST['submit'])) {
+            $email = $_POST['email'];
+            $password = $_POST['password'];
+
+            $errors = false;
+
+            // Check email
+            if (!User::checkEmail($email)) {
+                $errors[] = 'Email incorrect!';
+            }
+            // Check password
+            if (!User::checkPassword($password)) {
+                $errors[] = 'Wrong password!';
+            }
+            // Check exists user
+            $userId = User::checkUserData($email, $password);
+
+            if ($userId == false) {
+                //If data wrong, output this msg
+                $errors[] = 'Wrong login data!';
+            } else {
+                //If data ok, remember this user (session)
+                User::auth($userId);
+                //redirection user to cabinet
+                header("Location: /cabinet/");
+            }
+        }
 
         require_once (ROOT . '/views/user/login.php');
         return true;

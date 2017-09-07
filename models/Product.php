@@ -90,6 +90,26 @@ class Product
         return $newProducts;
     }
 
+    public static function getRecommendedProducts($count = self::SHOW_BY_DEFAULT)
+    {
+        $count = intval($count);
+        $db = Db::getConnection();
+        $recommendedProducts = array();
+
+        $result = $db->query('SELECT id, name, price, image FROM product WHERE status="1"'
+            . ' and is_recommended="1" ORDER BY id DESC LIMIT '. $count);
+
+        $i = 0;
+        while ($row = $result->fetch()) {
+            $recommendedProducts[$i]['id'] = $row['id'];
+            $recommendedProducts[$i]['name'] = $row['name'];
+            $recommendedProducts[$i]['image'] = $row['image'];
+            $recommendedProducts[$i]['price'] = $row['price'];
+            $i++;
+        }
+        return $recommendedProducts;
+    }
+
     public static function getTotalProductsInCategory($categoryId)
     {
         $db = Db::getConnection();

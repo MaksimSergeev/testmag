@@ -43,6 +43,7 @@
                 <ul>
                     <li><a href="/user/login/">Login</a></li>
                     <li><a href="/user/register/">Register</a></li>
+                    <li><a href="/account/">Account</a></li>
                 </ul>
                 <div class="cart box_1">
                     <a href="/cart/">

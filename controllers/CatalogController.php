@@ -12,6 +12,9 @@ class CatalogController
 
         $total = Product::getTotalProducts();
 
+        $recommendedProducts = array();
+        $recommendedProducts = Product::getRecommendedProducts(2);
+
         $pagination = new Pagination($total, $page, Product::SHOW_BY_DEFAULT, 'page-');
 
         require_once (ROOT . '/views/catalog/index.php');
@@ -25,6 +28,9 @@ class CatalogController
 
         $categoryProducts = array();
         $categoryProducts = Product::getProductListByCategory($categoryId, $page);
+
+        $recommendedProducts = array();
+        $recommendedProducts = Product::getRecommendedProducts(2);
 
         $total = Product::getTotalProductsInCategory($categoryId);
         //create object Pagination - page navigation

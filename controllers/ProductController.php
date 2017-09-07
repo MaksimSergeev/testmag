@@ -13,6 +13,9 @@ class ProductController
         $newProducts = array();
         $newProducts = Product::getNewProducts(3);
 
+        $recommendedProducts = array();
+        $recommendedProducts = Product::getRecommendedProducts(2);
+
         require_once (ROOT.'/views/product/view.php');
         return true;
     }

@@ -4,27 +4,24 @@
 <head>
     <title>TestMag</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!--  <link href="/template/css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/> -->
-     <script src="/template/js/jquery.min.js"></script>
-     <!-- Custom Theme files -->
-    <!--theme-style-->
     <link href="/template/css/style.css" rel="stylesheet" type="text/css" media="all"/>
-    <!--//theme-style-->
+    <link rel="stylesheet" href="/template/css/flexslider.css" type="text/css" media="screen"/>
+    <link href="/template/css/memenu.css" rel="stylesheet" type="text/css" media="all" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <!--fonts-->
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
     <!--//fonts-->
-    <!-- start menu -->
-    <link href="/template/css/memenu.css" rel="stylesheet" type="text/css" media="all"/>
-    <script type="text/javascript" src="/template/js/memenu.js"></script>
-    <script>
-        $(document).ready(function () {
-            $(".memenu").memenu();
-        });
-    </script>
+
+    <!--scripts-->
+    <script defer src="/template/js/jquery.flexslider.js"></script>
+    <script src="/template/js/main.js"></script>
+    <script src="/template/js/jquery.min.js"></script>
     <script src="/template/js/simpleCart.min.js"></script>
+    <script type="text/javascript" src="/template/js/memenu.js"></script>
+    <!--scripts-->
 </head>
 
 <body>
@@ -41,9 +38,13 @@
             </div>
             <div class="header-left">
                 <ul>
-                    <li><a href="/user/login/">Login</a></li>
-                    <li><a href="/user/register/">Register</a></li>
-                    <li><a href="/account/">Account</a></li>
+                    <?php if (User::isGuest()) : ?>
+                    <li><a href="/user/login">Login</a></li>
+                    <?php else : ?>
+                    <li><a href="/user/logout">Logout</a></li>
+                    <li><a href="/cabinet">Account</a></li>
+                    <?php endif; ?>
+                    <li><a href="/user/register">Register</a></li>
                 </ul>
                 <div class="cart box_1">
                     <a href="/cart/">

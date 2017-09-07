@@ -1455,7 +1455,6 @@ a.add-re {
 }
 
 a.add-re:hover {
-
     background: #000;
 }
 
@@ -1467,25 +1466,21 @@ a.add-re:hover {
 
 .comments-top-top {
     margin: 2em 0;
-
 }
 
 /*--//single--*/
-.register {
-    padding: 2em 0 13em;
-}
+
 .cabinet {
-    padding: 2em 0 38em;
+    padding: 2em 0 35em;
 }
 .cabinet ul li {
+    text-align: center;
     list-style-type: none;
     font-size: 1.5em;
     font-family: 'Lato', sans-serif;
     font-weight: 600;
 }
-
-    /*--register--*/
-.register h1 {
+.cabinet h1 {
     font-size: 3em;
     font-family: 'Lato', sans-serif;
     color: #000;
@@ -1493,11 +1488,24 @@ a.add-re:hover {
     font-weight: 600;
     margin-bottom: 0.5em;
 }
-.cabinet h1 {
+.cabinet h3 {
+    font-size: 2em;
+    font-family: 'Lato', sans-serif;
+    color: #e15904;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+    /*--register--*/
+.register {
+    padding: 2em 0 13em;
+}
+.register h1 {
     font-size: 3em;
     font-family: 'Lato', sans-serif;
     color: #000;
-    text-align: center; !important;
+    text-align: center;
     font-weight: 600;
     margin-bottom: 0.5em;
 }
@@ -1619,6 +1627,15 @@ a.add-re:hover {
     font-size: 3em;
     font-family: 'Lato', sans-serif;
     color: #000;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+.account h3 {
+    font-size: 2em;
+    font-family: 'Lato', sans-serif;
+    color: #e15904;
     text-align: center;
     font-weight: 600;
     margin-bottom: 0.5em;

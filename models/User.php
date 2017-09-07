@@ -1,8 +1,7 @@
 <?php
 
-class User
-{
-    //Insert new user in DB
+class User {
+    # Insert new user in DB
     public static function register($name, $email, $password) {
 
         $db = Db::getConnection();
@@ -14,35 +13,35 @@ class User
 
         return $result->execute();
     }
-    // Check name min: 2 words
+    # Check name min: 2 words
     public static function checkName($name) {
         if(strlen($name) >= 2) {
             return true;
         }
         return false;
     }
-    // Check password + confirm, min: 6 words and equality
+    # Check password + confirm, min: 6 words and equality
     public static function checkDoublePassword($password, $conf_password) {
         if((strlen($password) >= 6) && ($password === $conf_password)) {
             return true;
         }
         return false;
     }
-    // Check password, min: 6 words
+    # Check password, min: 6 words
     public static function checkPassword($password) {
         if(strlen($password) >= 6){
             return true;
         }
         return false;
     }
-    // Check and validate email
+    # Check and validate email
     public static function checkEmail($email) {
         if(filter_var($email, FILTER_VALIDATE_EMAIL)) {
             return true;
         }
         return false;
     }
-    // Check existence email
+    # Check existence email
     public static function checkEmailExists($email) {
 
         $db = Db::getConnection();
@@ -56,7 +55,7 @@ class User
         }
         return false;
     }
-    //Check exists user with received parameters in DB: email, password
+    # Check exists user with received parameters in DB: email, password
     public static function checkUserData($email, $password) {
 
         $db = Db::getConnection();
@@ -72,9 +71,56 @@ class User
         }
         return false;
     }
+    # Session start and receive User - userID
+    public static function auth($userId) {
 
-    public static function auth() {
-        session_start();
         $_SESSION['user'] = $userId;
+    }
+    # Check whether the user has logged in
+    public static function checkLogged() {
+
+        if (isset($_SESSION['user'])) {
+            return $_SESSION['user'];
+        }
+        header("Location: /user/login");
+    }
+    # Check user: guest or have account
+    public static function isGuest() {
+
+        if (isset($_SESSION['user'])) {
+            return false;
+        }
+        return true;
+    }
+    # Get information about user from DB
+    public static function getUserById($id) {
+
+        if ($id) {
+
+            $db = Db::getConnection();
+            $sql = "SELECT * FROM user WHERE id = :id";
+
+            $result = $db->prepare($sql);
+            $result->bindParam(':id', $id, PDO::PARAM_INT);
+            # Get assoc array mode
+            $result->setFetchMode(PDO::FETCH_ASSOC);
+            $result->execute();
+
+            return $result->fetch();
+        }
+    }
+    # Edit user data
+    public static function edit($userId, $name, $password) {
+
+        $db = Db::getConnection();
+
+        $sql = "UPDATE user SET name = :name, password = :password WHERE id = :id";
+
+        $result = $db->prepare($sql);
+        $result->bindParam(':id', $userId, PDO::PARAM_INT);
+        $result->bindParam(':name', $name, PDO::PARAM_STR);
+        $result->bindParam(':password', $password, PDO::PARAM_STR);
+
+        return $result->execute();
     }
 }

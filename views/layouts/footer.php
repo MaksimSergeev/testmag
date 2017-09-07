@@ -14,7 +14,25 @@
     <div>
         <p>© 2017 TestMag . All Rights Reserved | Design by <a href="http://w3layouts.com/" target="_blank">W3layouts</a>
             and Sergeev M.V.</p>
-        <p class'>Данный сайт является моим практическим обучением. С версткой еще нужно поработать. Серверная часть пока в приоритете.</p>
+        <p>Данный сайт является моим практическим обучением. С версткой еще нужно поработать. Серверная часть пока в приоритете.</p>
     </div>
 </div>
+
+
+        <script>
+            $(document).ready(function () {
+                $(".memenu").memenu();
+            });
+                //AJAX
+                $(".item_add").click(function () {
+                    var id = $(this).attr("data-id");
+                    $.post("/cart/addAjax/"+id, {}, function (data) {
+                        $(".simpleCart_quantity").html(data);
+                    });
+                    return false;
+                });
+                $(".memenu").memenu();
+            });
+        </script>
+</body>
 </html>

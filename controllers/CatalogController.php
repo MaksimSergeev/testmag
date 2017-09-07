@@ -1,9 +1,7 @@
 <?php
 
-class CatalogController
-{
-    public function actionIndex($page = 1)
-    {
+class CatalogController {
+    public function actionIndex($page = 1) {
         $categories = array();
         $categories = Category::getCategoriesList();
 
@@ -21,8 +19,7 @@ class CatalogController
         return true;
     }
 
-    public function actionCategory($categoryId, $page = 1)
-    {
+    public function actionCategory($categoryId, $page = 1) {
         $categories = array();
         $categories = Category::getCategoriesList();
 
@@ -33,7 +30,7 @@ class CatalogController
         $recommendedProducts = Product::getRecommendedProducts(2);
 
         $total = Product::getTotalProductsInCategory($categoryId);
-        //create object Pagination - page navigation
+        # create object Pagination - page navigation
         $pagination = new Pagination($total, $page, Product::SHOW_BY_DEFAULT, 'page-');
 
         require_once (ROOT . '/views/catalog/category.php');

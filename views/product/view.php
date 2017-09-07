@@ -56,9 +56,6 @@
                         </ul>
                     </div>
                     <!-- FlexSlider -->
-                    <script defer src="/template/js/jquery.flexslider.js"></script>
-                    <link rel="stylesheet" href="/template/css/flexslider.css" type="text/css" media="screen"/>
-
                     <script>
                         // Can also be used with $(document).ready()
                         $(window).load(function () {
@@ -68,6 +65,7 @@
                             });
                         });
                     </script>
+                    <!-- FlexSlider -->
                 </div>
                 <div class="col-md-7 single-top-in simpleCart_shelfItem">
                     <div class="single-para">
@@ -80,7 +78,7 @@
                         <p><?php echo $productItem['description']; ?></p>
                         <div class="clearfix"></div>
                         </ul>
-                        <a href="#" class="add-cart item_add">ADD TO CART</a>
+                        <a href="#" data-id="<?php echo $productItem['id']; ?>" class="add-cart item_add">ADD TO CART</a>
 
                     </div>
                 </div>

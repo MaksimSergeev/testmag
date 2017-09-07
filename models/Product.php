@@ -1,23 +1,28 @@
 <?php
 
-class Product
-{
+class Product {
+
     const SHOW_BY_DEFAULT = 9;
 
-    public static function getLatestProducts($page=1)
-    {
+    # Output last insert products
+    public static function getLatestProducts($page=1) {
+
         $page = intval($page);
         $offset = ($page - 1) * self::SHOW_BY_DEFAULT;
+        $limit = self::SHOW_BY_DEFAULT;
 
         $db = Db::getConnection();
+
+        $sql = "SELECT id, name, price, image FROM product "
+                . "WHERE status = '1' ORDER BY id DESC LIMIT :limit OFFSET :offset";
+
+        $result = $db->prepare($sql);
+        $result->bindParam(':limit', $limit, PDO::PARAM_INT);
+        $result->bindParam(':offset', $offset, PDO::PARAM_INT);
+
+        $result->execute();
+
         $productsList = array();
-
-        $result =$db->query("SELECT id, name, price, image FROM product "
-            . "WHERE status = '1' "
-            . "ORDER BY id DESC "
-            . "LIMIT " . self::SHOW_BY_DEFAULT
-            . " OFFSET " . $offset);
-
         $i = 0;
         while ($row = $result->fetch()) {
             $productsList[$i]['id'] = $row['id'];
@@ -28,22 +33,29 @@ class Product
         }
         return $productsList;
     }
+    # Output products by category
+    public static function getProductListByCategory($categoryId, $page = 1) {
 
-    public static function getProductListByCategory($categoryId = false, $page = 1)
-    {
         if ($categoryId) {
 
             $page = intval($page);
             $offset = ($page - 1) * self::SHOW_BY_DEFAULT;
+            $limit = self::SHOW_BY_DEFAULT;
 
             $db = Db::getConnection();
-            $products =array();
-            $result =$db->query("SELECT id, name, price, image FROM product "
-                . "WHERE status = '1' AND category_id = '$categoryId' "
-                . "ORDER BY id DESC "
-                . "LIMIT " . self::SHOW_BY_DEFAULT
-                . " OFFSET " . $offset);
 
+            $sql = "SELECT id, name, price, image FROM product "
+                    . "WHERE status = '1' AND category_id = :category_id "
+                    . "ORDER BY id ASC LIMIT :limit OFFSET :offset";
+
+            $result = $db->prepare($sql);
+            $result->bindParam(':category_id', $categoryId, PDO::PARAM_INT);
+            $result->bindParam(':limit', $limit, PDO::PARAM_INT);
+            $result->bindParam(':offset', $offset, PDO::PARAM_INT);
+
+            $result->execute();
+
+            $products = array();
             $i = 0;
             while ($row = $result->fetch()) {
                 $products[$i]['id'] = $row['id'];
@@ -55,30 +67,40 @@ class Product
             return $products;
         }
     }
+    # Output single product by ID
+    public static function getProductById($id) {
 
-    public static function getProductById($id)
-    {
         $id = intval($id);
 
         if ($id) {
 
             $db = Db::getConnection();
-            $result = $db->query("SELECT * FROM product WHERE id = '$id' ");
+            $sql = ("SELECT * FROM product WHERE id = :id");
+
+            $result = $db->prepare($sql);
+            $result->bindParam(':id', $id, PDO::PARAM_INT);
+            # get data like assoc array
             $result->setFetchMode(PDO::FETCH_ASSOC);
+            $result->execute();
 
             return $result->fetch();
         }
     }
+    # Output new ('is_new = 1') products
+    public static function getNewProducts($count = self::SHOW_BY_DEFAULT) {
 
-    public static function getNewProducts($count = self::SHOW_BY_DEFAULT)
-    {
         $count = intval($count);
         $db = Db::getConnection();
+
+        $sql = "SELECT id, name, price, image FROM product WHERE status='1' "
+                . "AND is_new='1' ORDER BY id DESC LIMIT :count";
+
+        $result = $db->prepare($sql);
+        $result->bindParam(':count', $count, PDO::PARAM_INT);
+
+        $result->execute();
+
         $newProducts = array();
-
-        $result = $db->query('SELECT id, name, price, image, is_new FROM product WHERE status="1"'
-            . ' and is_new="1" ORDER BY id DESC LIMIT '. $count);
-
         $i = 0;
         while ($row = $result->fetch()) {
             $newProducts[$i]['id'] = $row['id'];
@@ -89,16 +111,20 @@ class Product
         }
         return $newProducts;
     }
+    # Output recommended ('is_recommended = 1') products
+    public static function getRecommendedProducts($count = self::SHOW_BY_DEFAULT) {
 
-    public static function getRecommendedProducts($count = self::SHOW_BY_DEFAULT)
-    {
         $count = intval($count);
         $db = Db::getConnection();
+
+        $sql = "SELECT id, name, price, image FROM product WHERE status='1' "
+            . "AND is_recommended='1' ORDER BY id DESC LIMIT :count";
+
+        $result = $db->prepare($sql);
+        $result->bindParam(':count', $count, PDO::PARAM_INT);
+        $result->execute();
+
         $recommendedProducts = array();
-
-        $result = $db->query('SELECT id, name, price, image FROM product WHERE status="1"'
-            . ' and is_recommended="1" ORDER BY id DESC LIMIT '. $count);
-
         $i = 0;
         while ($row = $result->fetch()) {
             $recommendedProducts[$i]['id'] = $row['id'];
@@ -109,25 +135,30 @@ class Product
         }
         return $recommendedProducts;
     }
-
+    # Output total products in category field for products
     public static function getTotalProductsInCategory($categoryId)
     {
         $db = Db::getConnection();
 
-        $result = $db->query('SELECT count(id) AS count FROM product '
-            . 'WHERE status="1" AND category_id = '. $categoryId);
-        $result->setFetchMode(PDO::FETCH_ASSOC);
+        $sql = "SELECT count(id) AS count FROM product "
+            . "WHERE status='1' AND category_id = :category_id";
+
+        $result = $db->prepare($sql);
+        $result->bindParam(':category_id', $categoryId, PDO::PARAM_INT);
+        $result->execute();
+
         $row = $result->fetch();
 
         return $row['count'];
     }
-
+    # Output total products without reference to category
     public static function getTotalProducts()
     {
         $db = Db::getConnection();
 
-        $result = $db->query('SELECT count(id) AS count FROM product '
-            . 'WHERE status="1"');
+        $result = $db->query("SELECT count(id) AS count FROM product "
+                                . "WHERE status='1'");
+
         $result->setFetchMode(PDO::FETCH_ASSOC);
         $row = $result->fetch();
 

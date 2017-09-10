@@ -4,7 +4,7 @@
 <div class=" container">
     <div class=" register">
         <?php if ($result): ?>
-            <div class="register-complite" style="">
+            <div class="register-complete" style="">
                 <h1>Registration complite!</h1>
                 <h3>Now you can login as a user.</h3>
             </div>

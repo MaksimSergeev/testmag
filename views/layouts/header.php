@@ -3,10 +3,11 @@
 
 <head>
     <title>TestMag</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="/template/css/style.css" rel="stylesheet" type="text/css" media="all"/>
     <link rel="stylesheet" href="/template/css/flexslider.css" type="text/css" media="screen"/>
-    <link href="/template/css/memenu.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/template/css/memenu.css" rel="stylesheet" type="text/css" media="all"/>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -16,10 +17,9 @@
     <!--//fonts-->
 
     <!--scripts-->
-    <script defer src="/template/js/jquery.flexslider.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="/template/js/main.js"></script>
-    <script src="/template/js/jquery.min.js"></script>
-    <script src="/template/js/simpleCart.min.js"></script>
+    <script defer src="/template/js/jquery.flexslider.js"></script>
     <script type="text/javascript" src="/template/js/memenu.js"></script>
     <!--scripts-->
 </head>
@@ -31,18 +31,18 @@
         <div class="container">
             <div class="search">
                 <form>
-                    <input type="text" value="Search " onfocus="this.value = '';"
-                           onblur="if (this.value == '') {this.value = 'Search';}">
+                    <input type="text" value="Temporarily not working :(" onfocus="this.value = '';"
+                           onblur="if (this.value == '') {this.value = 'Temporarily not working :(';}">
                     <input type="submit" value="Go">
                 </form>
             </div>
             <div class="header-left">
                 <ul>
                     <?php if (User::isGuest()) : ?>
-                    <li><a href="/user/login">Login</a></li>
+                        <li><a href="/user/login">Login</a></li>
                     <?php else : ?>
-                    <li><a href="/user/logout">Logout</a></li>
-                    <li><a href="/cabinet">Account</a></li>
+                        <li><a href="/user/logout">Logout</a></li>
+                        <li><a href="/cabinet">Account</a></li>
                     <?php endif; ?>
                     <li><a href="/user/register">Register</a></li>
                 </ul>
@@ -50,12 +50,10 @@
                     <a href="/cart/">
                         <h3>
                             <div class="total">
-                                <span class="simpleCart_total"></span> (<span id="simpleCart_quantity"
-                                                                              class="simpleCart_quantity"></span> items)
+                                (<span class="cart-count"><?php echo Cart::countItems(); ?></span> items)
                             </div>
                             <img src="/template/images/cart.png" alt=""/></h3>
                     </a>
-                    <p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
                 </div>
                 <div class="clearfix"></div>
             </div>

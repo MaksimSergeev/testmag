@@ -35,12 +35,26 @@ h1, h2, h3, h4, h5, h6, label, p {
 .reg-errors ul {
     color: red;
 }
-.register-complite {
-    padding-top: 6em;
-    padding-bottom: 17em;
-}
-.register-complite h3 {
+.register-complete {
+     padding-top: 6em;
+     padding-bottom: 17em;
+ }
+.register-complete h3 {
     text-align: center;
+}
+
+.order-complete h3 {
+    text-align: center;
+    color: #EF5F21;
+}
+.order-complete {
+    padding-bottom: 1em;
+}
+
+.order h4 {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .active {
@@ -109,6 +123,16 @@ a.item_add {
     margin-top: 2px;
 }
 
+#ord-phone, #ord-comment {
+    width: 100%;
+    padding: 1em;
+    margin: 1em 0;
+    background: none;
+    outline: none;
+    border: 1px solid #A09F9F;
+    -webkit-appearance: none;
+}
+
 /*----*/
 .header {
     border-bottom: 1px solid #000;
@@ -116,7 +140,7 @@ a.item_add {
 
 .header-top {
     background: #000;
-    padding: 15px 0;
+    padding: 30px 0;
 }
 
 .search {
@@ -124,7 +148,6 @@ a.item_add {
     float: left;
     width: 25%;
     background-color: #fff;
-    margin-top: 11px;
 }
 
 .search input[type="text"] {
@@ -677,7 +700,7 @@ ul.nav-bottom li a:hover {
 .footer-class p {
     color: #fff;
     font-size: 1.2em;
-
+    margin-right: 10px;
 }
 
 .footer-class p a {
@@ -690,7 +713,7 @@ ul.nav-bottom li a:hover {
 }
 
 .footer-class {
-    padding: 1.5em 0;
+    padding: 1em 0;
     text-align: center;
     background: #000;
 }
@@ -728,9 +751,6 @@ div.social ul {
     padding-bottom: 10px;
 }
 
-ul.social {
-    padding: 1em 0 0;
-}
 
 ul.social li {
     display: inline-block;
@@ -769,7 +789,7 @@ ul.social li i:hover {
 /*--//footer--*/
 /*--contact--*/
 .contact {
-    padding: 2em 0 10em;
+    padding: 2em 0 15em;
 }
 
 .contact h1 {
@@ -1499,7 +1519,7 @@ a.add-re:hover {
 
     /*--register--*/
 .register {
-    padding: 2em 0 13em;
+    padding: 2em 0 19em;
 }
 .register h1 {
     font-size: 3em;
@@ -1690,7 +1710,7 @@ a.add-re:hover {
 }
 
 .account {
-    padding: 2em 0 23em;
+    padding: 2em 0 29em;
 }
 
 .five {
@@ -1805,11 +1825,10 @@ a.create {
 .cart-item-info {
     width: 75%;
     float: left;
-
 }
 
 .check {
-    padding: 4em 0;
+    padding: 4em 0 22em;
 }
 
 .cart-item-info h3 {
@@ -1832,22 +1851,21 @@ a.create {
     width: 100%;
 }
 
-.delivery {
+.price-item {
     margin-top: 3em;
 }
 
-.delivery p {
-    color: #A6A6A6;
+.price-item p {
     font-size: 1em;
-    font-weight: 400;
+    font-weight: 600;
     float: left;
 }
 
-.delivery span {
-    color: #A6A6A6;
+.price-item span {
     font-size: 1em;
-    font-weight: 400;
+    font-weight: 600;
     float: right;
+    margin-right: 15%;
 }
 
 .cart-item-info h4 span {
@@ -1855,7 +1873,7 @@ a.create {
     font-weight: 400;
 }
 
-.close1, .close2 {
+.close1 {
     background: url('../images/close_1.png') no-repeat 0px 0px;
     cursor: pointer;
     width: 28px;
@@ -1877,6 +1895,10 @@ a.create {
     position: relative;
 }
 
+.cart-empty {
+text-align: center;
+}
+
 a.order {
     background: #EF5F21;
     padding: 10px 20px;
@@ -1896,7 +1918,6 @@ a.order:hover {
 
 .total-item, .cart-items {
     margin-top: 0em;
-    padding-bottom: 2em;
 }
 
 .total-item h3 {
@@ -1971,7 +1992,8 @@ ul.total_price li.last_price {
 }
 
 ul.total_price li.last_price span {
-    font-size: 1.1em;
+    font-size: 2em;
+    font-weight: 600;
     color: #000;
 }
 
@@ -1996,8 +2018,10 @@ ul.total_price li.last_price span {
 }
 
 .check h1 {
+    font-weight: 600;
     font-size: 1.5em;
     margin-bottom: 2em;
+    margin-left: 30%;
     font-family: 'Lato', sans-serif;
 }
 

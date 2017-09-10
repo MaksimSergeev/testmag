@@ -86,7 +86,6 @@
                 <hr>
                 <!---->
 
-
                 <div class=" bottom-product">
                     <p class="tun2">New products</p>
                     <?php foreach ($newProducts as $new): ?>
@@ -101,8 +100,9 @@
                                 </a>
                             </div>
                             <p class="tun"><?php echo $subname = mb_substr($new['name'], 0, 30, 'UTF-8') . '...'; ?></p>
-                            <a href="#" class="item_add"><p class="number item_price">
-                                    $<?php echo $new['price']; ?></p></a>
+                            <a href="#" data-id="<?php echo $new['id'];?>" class="item_add">
+                                <p class="number item_price">$<?php echo $new['price']; ?></p>
+                            </a>
                         </div>
                     <?php endforeach; ?>
                     <div class="clearfix"></div>

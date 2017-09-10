@@ -44,7 +44,7 @@
                 </div>
                 <div class=" bottom-product">
                     <?php foreach ($latestProducts as $product): ?>
-                    <div class="col-md-4 bottom-cd simpleCart_shelfItem">
+                    <div class="col-md-4 bottom-cd">
                         <div class="product-at ">
                             <a href="/product/<?php echo $product['id'];?>"><img class="img-responsive" src="<?php echo $product['image'];?>" alt="">
                                 <div class="pro-grid">

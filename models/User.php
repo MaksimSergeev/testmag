@@ -41,6 +41,13 @@ class User {
         }
         return false;
     }
+    # Check phone number, min: 10 words
+    public static function checkPhone($phone) {
+        if (strlen($phone) >= 10) {
+            return true;
+        }
+        return false;
+    }
     # Check existence email
     public static function checkEmailExists($email) {
 

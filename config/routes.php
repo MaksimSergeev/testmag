@@ -10,7 +10,10 @@ return array(
     'index.php' => 'site/index', // actionIndex in SiteController
     'user/logout' => 'user/logout', // actionLogout in UserController
     'user/login' => 'user/login', // actionLogin in UserController
-    'cart' => 'cart/add', // actionAdd in CartController
+    'cart/checkout' => 'cart/checkout', // actionCheckout in CartController
+    'cart/delete/([0-9]+)' => 'cart/delete/$1', // actionDelete in CartController
+    'cart/add/([0-9]+)' => 'cart/add/$1', // actionAdd in CartController
+    'cart' => 'cart/index', // actionIndex in CartController
     'user/register' => 'user/register', // actionRegister in UserController
     'cabinet/edit' => 'cabinet/edit', // actionEdit in CabinetController
     'cabinet' => 'cabinet/index', // actionIndex in CabinetController

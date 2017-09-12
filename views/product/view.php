@@ -55,17 +55,6 @@
                             </li>
                         </ul>
                     </div>
-                    <!-- FlexSlider -->
-                    <script>
-                        // Can also be used with $(document).ready()
-                        $(window).load(function () {
-                            $('.flexslider').flexslider({
-                                animation: "slide",
-                                controlNav: "thumbnails"
-                            });
-                        });
-                    </script>
-                    <!-- FlexSlider -->
                 </div>
                 <div class="col-md-7 single-top-in simpleCart_shelfItem">
                     <div class="single-para">

@@ -1,42 +1,41 @@
-jQuery(document).ready(function($){
-	var tabItems = $('.cd-tabs-navigation a'),
-		tabContentWrapper = $('.cd-tabs-content');
+$(document).ready(function () {
+            
+            // MeMenu
+            $(".memenu").memenu();
 
-	tabItems.on('click', function(event){
-		event.preventDefault();
-		var selectedItem = $(this);
-		if( !selectedItem.hasClass('selected') ) {
-			var selectedTab = selectedItem.data('content'),
-				selectedContent = tabContentWrapper.find('li[data-content="'+selectedTab+'"]'),
-				slectedContentHeight = selectedContent.innerHeight();
-			
-			tabItems.removeClass('selected');
-			selectedItem.addClass('selected');
-			selectedContent.addClass('selected').siblings('li').removeClass('selected');
-			//animate tabContentWrapper height when content changes 
-			tabContentWrapper.animate({
-				'height': slectedContentHeight
-			}, 200);
-		}
-	});
+            // AJAX add
+            $(".item_add").click(function () {
+                var id = $(this).attr("data-id");
+                $.post("/cart/add/" + id, {}, function (data) {
+                    $(".cart-count").html(data);
+                });
+                return false;
+            });
 
-	//hide the .cd-tabs::after element when tabbed navigation has scrolled to the end (mobile version)
-	checkScrolling($('.cd-tabs nav'));
-	$(window).on('resize', function(){
-		checkScrolling($('.cd-tabs nav'));
-		tabContentWrapper.css('height', 'auto');
-	});
-	$('.cd-tabs nav').on('scroll', function(){ 
-		checkScrolling($(this));
-	});
-
-	function checkScrolling(tabs){
-		var totalTabWidth = parseInt(tabs.children('.cd-tabs-navigation').width()),
-		 	tabsViewport = parseInt(tabs.width());
-		if( tabs.scrollLeft() >= totalTabWidth - tabsViewport) {
-			tabs.parent('.cd-tabs').addClass('is-ended');
-		} else {
-			tabs.parent('.cd-tabs').removeClass('is-ended');
-		}
-	}
-});
+            // AJAX delete
+            $(".close1").click(function(){
+                var b_id = $(this).attr("b-id");
+                $.ajax({
+                        url:"/cart/delete/" + b_id,
+                        method:"POST",
+                        success:function(data)
+                        {
+                            var obj = jQuery.parseJSON(data);
+                            $(".cart-count").html(obj.countItems);
+                            $(".t-price").html(obj.totalPrice);
+                            $(".cart-header#"+b_id).fadeOut('slow', function () {
+                                $(".cart-header#"+b_id).remove();
+                            });
+                        }
+                    });
+                return false;
+            });
+            
+            // FlexSlider
+            $(window).load(function () {
+                $('.flexslider').flexslider({
+                    animation: "slide",
+                    controlNav: "thumbnails"
+                });
+            });
+        });

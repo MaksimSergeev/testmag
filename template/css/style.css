@@ -1897,6 +1897,7 @@ a.create {
 
 .cart-empty {
 text-align: center;
+margin-bottom: 2em;
 }
 
 a.order {

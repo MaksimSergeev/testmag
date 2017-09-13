@@ -58,7 +58,7 @@
                                 </a>
                             </div>
                             <p class="tun"><?php echo $subname = mb_substr($product['name'], 0, 30, 'UTF-8').'...';?></p>
-                            <a href="//" data-id="<?php echo $product['id'];?>" class="item_add"><p class="number item_price"><i> </i>$<?php echo $product['price'];?></p></a>
+                            <a href="#" data-id="<?php echo $product['id'];?>" class="item_add"><p class="number item_price"><i> </i>$<?php echo $product['price'];?></p></a>
                         </div>
                     <?php endforeach; ?>
                     <div class="clearfix"></div>

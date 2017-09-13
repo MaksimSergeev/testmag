@@ -10,7 +10,7 @@ class CabinetController
         // Get information about user from DB
         $user = User::getUserById($userId);
 
-        require_once(ROOT . '/views/cabinet/index.php');
+        require_once (ROOT . '/views/cabinet/index.php');
         return true;
     }
 
@@ -44,7 +44,7 @@ class CabinetController
             }
         }
 
-        require_once(ROOT . '/views/cabinet/edit.php');
+        require_once (ROOT . '/views/cabinet/edit.php');
         return true;
     }
 }

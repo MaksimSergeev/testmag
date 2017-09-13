@@ -10,7 +10,7 @@
             </div>
         <?php else: ?>
         <h1>Register</h1>
-        <form action="//" method="post">
+        <form action="#" method="post">
 
             <div class="col-md-offset-3 col-md-6 register-top-grid">
                 <div>

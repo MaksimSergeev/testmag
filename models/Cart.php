@@ -1,4 +1,5 @@
 <?php
+
 // Class Cart for add products and leave an order
 class Cart
 {
@@ -16,7 +17,7 @@ class Cart
         }
         // If product exist in cart, but add again - increase the count
         if (array_key_exists($id, $productsInCart)) {
-            $productsInCart[$id] ++;
+            $productsInCart[$id]++;
         } else {
             // Add new product in cart
             $productsInCart[$id] = 1;
@@ -26,9 +27,11 @@ class Cart
 
         return self::countItems();
     }
+
     // Add product to cart
     public static function deleteProduct($id)
     {
+
         // Get an array with the identifiers and the number of items in the cart
         $productsInCart = self::getProducts();
         // Remove from the array the element with the specified id
@@ -39,6 +42,7 @@ class Cart
         return self::countItems();
 
     }
+
     // Count added products to cart (in session)
     public static function countItems()
     {
@@ -51,9 +55,10 @@ class Cart
             return $count;
 
         } else {
-            return  0;
+            return 0;
         }
     }
+
     // Get products from session
     public static function getProducts()
     {
@@ -77,6 +82,7 @@ class Cart
         }
         return $total;
     }
+
     public static function clear()
     {
         if (isset($_SESSION['products'])) {

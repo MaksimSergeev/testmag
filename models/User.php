@@ -5,6 +5,7 @@ class User
     // Insert new user in DB
     public static function register($name, $email, $password)
     {
+
         $db = Db::getConnection();
         $sql = 'INSERT INTO user (name, email, password) VALUES (:name, :email, :password)';
         $result = $db->prepare($sql);
@@ -63,6 +64,7 @@ class User
     // Check existence email
     public static function checkEmailExists($email)
     {
+
         $db = Db::getConnection();
         $sql = 'SELECT COUNT(*) FROM user WHERE email = :email';
         $result = $db->prepare($sql);
@@ -78,6 +80,7 @@ class User
     // Check exists user with received parameters in DB: email, password
     public static function checkUserData($email, $password)
     {
+
         $db = Db::getConnection();
         $sql = 'SELECT * FROM user WHERE email = :email AND password = :password';
         $result = $db->prepare($sql);
@@ -95,12 +98,14 @@ class User
     // Session start and receive User - userID
     public static function auth($userId)
     {
+
         $_SESSION['user'] = $userId;
     }
 
     // Check whether the user has logged in
     public static function checkLogged()
     {
+
         if (isset($_SESSION['user'])) {
             return $_SESSION['user'];
         }
@@ -110,6 +115,7 @@ class User
     // Check user: guest or have account
     public static function isGuest()
     {
+
         if (isset($_SESSION['user'])) {
             return false;
         }
@@ -119,6 +125,7 @@ class User
     // Get information about user from DB
     public static function getUserById($id)
     {
+
         if ($id) {
 
             $db = Db::getConnection();
@@ -137,6 +144,7 @@ class User
     // Edit user data
     public static function edit($userId, $name, $password)
     {
+
         $db = Db::getConnection();
 
         $sql = "UPDATE user SET name = :name, password = :password WHERE id = :id";

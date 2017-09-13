@@ -2,8 +2,10 @@
 
 class Category
 {
+
     public static function getCategoriesList()
     {
+
         $db = Db::getConnection();
         $categoryList = array();
         $result = $db->query('SELECT id, name, image FROM category ORDER BY sort_order ASC');

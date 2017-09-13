@@ -23,7 +23,7 @@
         <div class="order">
         <h4>To complete the order, please fill out the form:</h4>
         </div>
-        <form action="//" method="post">
+        <form action="#" method="post">
             <div class="col-md-offset-3 col-md-6 register-top-grid">
                 <div>
                     <input type="text" name="userName" placeholder="Name" value="<?php echo $userName; ?>">

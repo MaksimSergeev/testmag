@@ -1,4 +1,5 @@
 <?php
+
 //Component for work with routes
 class Router
 {
@@ -45,7 +46,7 @@ class Router
 
                 // Connect the controller class file
                 $controllerFile = ROOT . '/controllers/' .
-                        $controllerName . '.php';
+                    $controllerName . '.php';
 
                 if (file_exists($controllerFile)) {
                     include_once($controllerFile);

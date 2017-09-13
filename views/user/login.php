@@ -6,7 +6,7 @@
             <h1>Account</h1>
             <div class="account-pass">
                 <div class="col-md-offset-3 col-md-6 account-top">
-                    <form action="//" method="post">
+                    <form action="#" method="post">
                         <div>
                             <input placeholder="Email" type="text" name="email" value="<?php echo $email; ?>">
                         </div>

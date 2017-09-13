@@ -55,6 +55,17 @@
                             </li>
                         </ul>
                     </div>
+                    <!-- FlexSlider -->
+                    <script>
+                        // Can also be used with $(document).ready()
+                        $(window).load(function () {
+                            $('.flexslider').flexslider({
+                                animation: "slide",
+                                controlNav: "thumbnails"
+                            });
+                        });
+                    </script>
+                    <!-- FlexSlider -->
                 </div>
                 <div class="col-md-7 single-top-in simpleCart_shelfItem">
                     <div class="single-para">
@@ -67,7 +78,7 @@
                         <p><?php echo $productItem['description']; ?></p>
                         <div class="clearfix"></div>
                         </ul>
-                        <a href="//" data-id="<?php echo $productItem['id']; ?>" class="add-cart item_add">ADD TO CART</a>
+                        <a href="#" data-id="<?php echo $productItem['id']; ?>" class="add-cart item_add">ADD TO CART</a>
 
                     </div>
                 </div>
@@ -89,7 +100,7 @@
                                 </a>
                             </div>
                             <p class="tun"><?php echo $subname = mb_substr($new['name'], 0, 30, 'UTF-8') . '...'; ?></p>
-                            <a href="//" data-id="<?php echo $new['id'];?>" class="item_add">
+                            <a href="#" data-id="<?php echo $new['id'];?>" class="item_add">
                                 <p class="number item_price">$<?php echo $new['price']; ?></p>
                             </a>
                         </div>

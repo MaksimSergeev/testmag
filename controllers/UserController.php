@@ -2,6 +2,7 @@
 
 class UserController
 {
+
     // Action Register (new user)
     public function actionRegister()
     {
@@ -40,7 +41,7 @@ class UserController
                 $result = User::register($name, $email, $password);
             }
         }
-        require_once (ROOT . '/views/user/register.php');
+        require_once(ROOT . '/views/user/register.php');
         return true;
     }
 
@@ -77,13 +78,14 @@ class UserController
                 header("Location: /cabinet/");
             }
         }
-        require_once (ROOT . '/views/user/login.php');
+        require_once(ROOT . '/views/user/login.php');
         return true;
     }
 
     // Action Logout
     public static function actionLogout()
     {
+
         unset($_SESSION['user']);
         header("Location: /");
     }

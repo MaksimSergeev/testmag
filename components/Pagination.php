@@ -24,6 +24,7 @@ class Pagination
         // Set the current page number
         $this->setCurrentPage($currentPage);
     }
+
     // return HTML with navigation links
     public function get()
     {
@@ -74,7 +75,7 @@ class Pagination
         $currentURI = preg_replace('~/page-[0-9]+~', '', $currentURI);
         // Generate HTML link code and return
         return
-                '<li><a href="' . $currentURI . $this->index . $page . '">' . $text . '</a></li>';
+            '<li><a href="' . $currentURI . $this->index . $page . '">' . $text . '</a></li>';
     }
 
     // To get where to start.
@@ -96,7 +97,7 @@ class Pagination
             $start = $this->amount - $this->max > 0 ? $this->amount - $this->max : 1;
         }
         return
-                array($start, $end);
+            array($start, $end);
     }
 
     // To set the current page

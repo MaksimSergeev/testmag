@@ -9,7 +9,6 @@ class CartController
         echo Cart::addProduct($id);
         return true;
     }
-
     // Remove item from cart with AJAX
     public function actionDelete($id)
     {
@@ -37,6 +36,7 @@ class CartController
 
     public static function actionIndex()
     {
+
         $productsInCart = false;
         // Get products from session
         $productsInCart = Cart::getProducts();
@@ -49,7 +49,7 @@ class CartController
             $totalPrice = Cart::getTotalPrice($products);
         }
 
-        require_once(ROOT . '/views/cart/index.php');
+        require_once (ROOT . '/views/cart/index.php');
         return true;
     }
 
@@ -113,7 +113,7 @@ class CartController
                 }
             }
         }
-        require_once(ROOT . '/views/cart/checkout.php');
+        require_once (ROOT . '/views/cart/checkout.php');
         return true;
     }
 }

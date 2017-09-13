@@ -15,6 +15,13 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
     <!--//fonts-->
+
+    <!--scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="/template/js/main.js"></script>
+    <script defer src="/template/js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="/template/js/memenu.js"></script>
+    <!--scripts-->
 </head>
 
 <body>

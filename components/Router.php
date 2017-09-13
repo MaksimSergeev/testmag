@@ -1,10 +1,12 @@
 <?php
 //Component for work with routes
-class Router {
+class Router
+{
     //Array with routes
     private $routes;
 
-    public function __construct() {
+    public function __construct()
+    {
         // File path with routes
         $routesPath = ROOT . '/config/routes.php';
         // Get routes from file
@@ -12,14 +14,16 @@ class Router {
     }
 
     //Returns the query string
-    private function getURI() {
+    private function getURI()
+    {
         if (!empty($_SERVER['REQUEST_URI'])) {
             return trim($_SERVER['REQUEST_URI'], '/');
         }
     }
 
     //Method for request processing
-    public function run() {
+    public function run()
+    {
         // Get string request
         $uri = $this->getURI();
 
@@ -59,5 +63,4 @@ class Router {
             }
         }
     }
-
 }

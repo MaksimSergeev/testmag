@@ -23,8 +23,8 @@ $(document).ready(function () {
                             var obj = jQuery.parseJSON(data);
                             $(".cart-count").html(obj.countItems);
                             $(".t-price").html(obj.totalPrice);
-                            $(".cart-header#"+b_id).fadeOut('slow', function () {
-                                $(".cart-header#"+b_id).remove();
+                            $(".cart-header//"+b_id).fadeOut('slow', function () {
+                                $(".cart-header//"+b_id).remove();
                             });
                         }
                     });

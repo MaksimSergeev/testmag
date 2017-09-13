@@ -1,8 +1,10 @@
 <?php
 
-class SiteController {
+class SiteController
+{
 
-    public function actionIndex() {
+    public function actionIndex()
+    {
         $categories = array();
         $categories = Category::getCategoriesList();
 
@@ -10,8 +12,9 @@ class SiteController {
         return true;
     }
 
-    public function actionContact() {
-       # TODO
+    public function actionContact()
+    {
+       // TODO
         require_once(ROOT . '/views/site/contact.php');
         return true;
     }

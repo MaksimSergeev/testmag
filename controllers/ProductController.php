@@ -1,7 +1,9 @@
 <?php
 
-class ProductController {
-    public function actionView($Id) {
+class ProductController
+{
+    public function actionView($Id)
+    {
         $categories = array();
         $categories = Category::getCategoriesList();
 

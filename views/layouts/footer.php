@@ -5,8 +5,8 @@
             <ul class="social">
                 <li><p>Contacts: Tel.: +380663550068</p></li>
                 <li><a href="https://www.facebook.com/profile.php?id=100021547880453"><i class="facebook"> </i></a></li>
-                <li><a href="#"><i class="twitter"> </i></a></li>
-                <li><a href="#"><i class="gmail"> </i></a></li>
+                <li><a href="//"><i class="twitter"> </i></a></li>
+                <li><a href="//"><i class="gmail"> </i></a></li>
             </ul>
         </div>
         <div class="col-md-12">

@@ -6,7 +6,7 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 body {
-    background: #fff;
+    background: //fff;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6, label, p {
 
 .order-complete h3 {
     text-align: center;
-    color: #EF5F21;
+    color: //EF5F21;
 }
 .order-complete {
     padding-bottom: 1em;
@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6, label, p {
 
 .active {
     background: none;
-    color: #EF5F21 !important;
+    color: //EF5F21 !important;
 }
 
 .itemContainer {
@@ -87,7 +87,7 @@ h1, h2, h3, h4, h5, h6, label, p {
 }
 
 .item_add {
-    color: #fff;
+    color: //fff;
     border: none;
 }
 
@@ -100,7 +100,7 @@ a.item_add {
 }
 
 .box_1 h3 {
-    color: #fff;
+    color: //fff;
     font-size: 1.1em;
 
 }
@@ -110,7 +110,7 @@ a.item_add {
 }
 
 .box_1 p a {
-    color: #fff;
+    color: //fff;
     font-size: 0.875em;
 }
 
@@ -123,23 +123,23 @@ a.item_add {
     margin-top: 2px;
 }
 
-#ord-phone, #ord-comment {
+//ord-phone, //ord-comment {
     width: 100%;
     padding: 1em;
     margin: 1em 0;
     background: none;
     outline: none;
-    border: 1px solid #A09F9F;
+    border: 1px solid //A09F9F;
     -webkit-appearance: none;
 }
 
 /*----*/
 .header {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid //000;
 }
 
 .header-top {
-    background: #000;
+    background: //000;
     padding: 30px 0;
 }
 
@@ -147,7 +147,7 @@ a.item_add {
     position: relative;
     float: left;
     width: 25%;
-    background-color: #fff;
+    background-color: //fff;
 }
 
 .search input[type="text"] {
@@ -157,7 +157,7 @@ a.item_add {
     width: 91%;
     border: none;
     font-size: 1.2em;
-    color: #000;
+    color: //000;
     font-weight: 700;
 }
 
@@ -168,16 +168,16 @@ a.item_add {
     outline: none;
     top: 0px;
     right: 0px;
-    background: #c7c7c7;
+    background: //c7c7c7;
     font-size: 1.2em;
-    color: #000;
+    color: //000;
     padding: 3px;
     font-weight: 700;
 }
 
 .search input[type="submit"]:hover {
-    background: #EF5F21;
-    color: #fff;
+    background: //EF5F21;
+    color: //fff;
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
     -o-transition: 0.5s all;
@@ -200,13 +200,13 @@ a.item_add {
 
 .header-left ul li a {
     text-decoration: none;
-    color: #fff;
+    color: //fff;
     font-size: 1.1em;
     margin: 0 2em 0 0;
 }
 
 .header-left ul li a:hover {
-    color: #EF5F21;
+    color: //EF5F21;
 }
 
 .logo {
@@ -226,7 +226,7 @@ a.item_add {
 .h_nav h4 {
     border-bottom: 1px solid rgb(236, 236, 236);
     font-size: 1.3em;
-    color: #000;
+    color: //000;
     line-height: 1.8em;
     margin-bottom: 4%;
 }
@@ -242,7 +242,7 @@ a.item_add {
 .h_nav ul li a {
     display: block;
     font-size: 0.85em;
-    color: #000;
+    color: //000;
     text-transform: capitalize;
     line-height: 3em;
     -webkit-transition: all 0.3s ease-in-out;
@@ -252,7 +252,7 @@ a.item_add {
 }
 
 .h_nav ul li a:hover {
-    color: #EF5F21;
+    color: //EF5F21;
     text-decoration: underline;
 }
 
@@ -326,13 +326,13 @@ a.item_add {
     height: 10px;
     width: 10px;
     display: inline-block;
-    border: 1px solid #fff;
+    border: 1px solid //fff;
     background: none;
     border-radius: 50px;
 }
 
 .callbacks_here a:after {
-    background: #fff;
+    background: //fff;
 }
 
 .callbacks_tabs a {
@@ -375,7 +375,7 @@ ul.callbacks_tabs.callbacks1_tabs {
     position: absolute;
     padding: 6em 0 1em;
     margin-left: 5%;
-    color: #fff;
+    color: //fff;
     width: 340px;
 }
 
@@ -395,21 +395,21 @@ ul.callbacks_tabs.callbacks1_tabs {
 
 .banner-text a {
     text-decoration: none;
-    color: #fff;
+    color: //fff;
     font-size: 1.2em;
-    background: #EF5F21;
+    background: //EF5F21;
     padding: 0.4em 1em;
     border-radius: 5px;
 }
 
 .banner-text a:hover {
-    color: #EF5F21;
-    background: #fff;
+    color: //EF5F21;
+    background: //fff;
 }
 
 /*--content-top--*/
 .content-top h1 {
-    color: #000;
+    color: //000;
     font-size: 2.2em;
     font-family: 'Lato', sans-serif;
     font-weight: 600;
@@ -433,12 +433,12 @@ ul.callbacks_tabs.callbacks1_tabs {
 }
 
 .grid-top p a {
-    color: #000;
+    color: //000;
     text-decoration: none;
 }
 
 .grid-top p a:hover {
-    color: #EF5F21;
+    color: //EF5F21;
 }
 
 .grid-in {
@@ -459,7 +459,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 }
 
 .twit h4 {
-    color: #fff;
+    color: //fff;
     font-size: 2em;
     font-weight: 600;
     margin: 0 auto;
@@ -479,7 +479,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 /*--content-bottom--*/
 .content-bottom ul li {
     display: inline-block;
-    border: 1px solid #eee;
+    border: 1px solid //eee;
     float: left;
     border-left: none;
     width: 16.666%;
@@ -503,7 +503,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 }
 
 .content-top-bottom h2 {
-    color: #000;
+    color: //000;
     font-size: 2.2em;
     font-family: 'Lato', sans-serif;
     font-weight: 600;
@@ -528,7 +528,7 @@ ul.callbacks_tabs.callbacks1_tabs {
     top: 0;
     left: 0;
     text-align: center;
-    color: #ffffff;
+    color: //ffffff;
     overflow: hidden;
 }
 
@@ -644,7 +644,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 }
 
 .content-grid h5 {
-    color: #fff;
+    color: //fff;
     font-size: 2em;
 }
 
@@ -659,12 +659,12 @@ ul.callbacks_tabs.callbacks1_tabs {
 /*--//content--*/
 /*--footer--*/
 .footer {
-    background: #141414;
+    background: //141414;
 }
 
 .amet-sed h4 {
     font-size: 1.5em;
-    color: #fff;
+    color: //fff;
     font-family: 'Lato', sans-serif;
     margin: 0 0 1em;
     text-transform: uppercase;
@@ -681,41 +681,41 @@ ul.nav-bottom li {
 
 ul.nav-bottom li a {
     text-decoration: none;
-    color: #989696;
+    color: //989696;
     font-size: 1.1em;
     display: inline-block;
     margin: 0.2em 0;
 }
 
 ul.nav-bottom li a:hover {
-    color: #EF5F21;
+    color: //EF5F21;
 }
 
 .amet-sed p {
-    color: #989696;
+    color: //989696;
     font-size: 1.2em;
     margin: 0 0 0.3em;
 }
 
 .footer-class p {
-    color: #fff;
+    color: //fff;
     font-size: 1.2em;
     margin-right: 10px;
 }
 
 .footer-class p a {
-    color: #EF5F21;
+    color: //EF5F21;
     text-decoration: none;
 }
 
 .footer-class p a:hover {
-    color: #fff;
+    color: //fff;
 }
 
 .footer-class {
     padding: 1em 0;
     text-align: center;
-    background: #000;
+    background: //000;
 }
 
 .amet-sed form {
@@ -726,25 +726,25 @@ ul.nav-bottom li a:hover {
     width: 69%;
     padding: 0.5em;
     outline: none;
-    color: #000;
+    color: //000;
     font-size: 1em;
-    background: #fff;
+    background: //fff;
     border: none;
 }
 
 .amet-sed input[type="submit"] {
     width: 20%;
-    color: #FFF;
+    color: //FFF;
     font-size: 1em;
-    background: #EF5F21;
+    background: //EF5F21;
     border: none;
     outline: none;
     padding: 0.5em;
 }
 
 .amet-sed input[type="submit"]:hover {
-    background: #fff;
-    color: #EF5F21;
+    background: //fff;
+    color: //EF5F21;
 }
 
 div.social ul {
@@ -795,7 +795,7 @@ ul.social li i:hover {
 .contact h1 {
     font-size: 3em;
     font-family: 'Lato', sans-serif;
-    color: #000;
+    color: //000;
     text-align: center;
     font-weight: 600;
 }
@@ -813,9 +813,9 @@ ul.social li i:hover {
     margin: 0.5em 0;
     background: none;
     outline: none;
-    border: 1px solid #A09F9F;
+    border: 1px solid //A09F9F;
     font-size: 1em;
-    color: #A09F9F;
+    color: //A09F9F;
     -webkit-appearance: none;
 }
 
@@ -826,17 +826,17 @@ ul.social li i:hover {
 .send input[type="submit"] {
     width: 14%;
     font-size: 1.1em;
-    background: #EF5F21;
+    background: //EF5F21;
     padding: 0.4em 0.8em;
     text-align: center;
-    color: #fff;
+    color: //fff;
     border: none;
     outline: none;
     -webkit-appearance: none;
 }
 
 .send input[type="submit"]:hover {
-    background: #2d2d2d;
+    background: //2d2d2d;
 }
 
 .contact-form {
@@ -849,13 +849,13 @@ ul.social li i:hover {
 
 .contact-in p {
     font-size: 1em;
-    color: #626262;
+    color: //626262;
     width: 72%;
     line-height: 1.7em;
 }
 
 .address-more h4 {
-    color: #000;
+    color: //000;
     font-size: 1.4em;
     font-family: 'Lato', sans-serif;
     margin: 0 0 0.3em;
@@ -864,11 +864,11 @@ ul.social li i:hover {
 
 .address-more p a {
     text-decoration: none;
-    color: #626262;
+    color: //626262;
 }
 
 .address-more p a:hover {
-    color: #EF5F21;
+    color: //EF5F21;
 }
 /*--//contact--*/
 
@@ -886,14 +886,14 @@ ul.social li i:hover {
     display: block;
     padding: 0.3em 0.4em;
     text-decoration: none;
-    color: #000;
-    border: 1px solid #000;
+    color: //000;
+    border: 1px solid //000;
 }
 
 .tags li a:hover {
-    color: #fff;
-    background: #EF5F21;
-    border: 1px solid #EF5F21;
+    color: //fff;
+    background: //EF5F21;
+    border: 1px solid //EF5F21;
 }
 
 .tags ul li:nth-child(4), .tags ul li:nth-child(8), .tags ul li:nth-child(12) {
@@ -902,24 +902,24 @@ ul.social li i:hover {
 
 /*----*/
 h3.cate {
-    color: #000;
-    border-bottom: 1px solid #000;
+    color: //000;
+    border-bottom: 1px solid //000;
     width: 69%;
     font-size: 2em;
     font-family: 'Lato', sans-serif;
 }
 
 .of-left {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid //000;
 }
 
 .of-left1 {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid //000;
     margin-bottom: 25px;
 }
 
 .items-box {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid //000;
     margin-left: 15px;
     margin-right: 15px;
     margin-bottom: 25px;
@@ -942,14 +942,14 @@ nav.in {
 }
 
 .pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
-    color: #fff;
-    background-color: #EF5F21;
-    border-color: #EF5F21;
+    color: //fff;
+    background-color: //EF5F21;
+    border-color: //EF5F21;
 }
 
 .pagination > li > a, .pagination > li > span {
 
-    color: #000;
+    color: //000;
 }
 
 /*----*/
@@ -970,14 +970,14 @@ ul.kid-menu {
     margin: 0.3em 0;
     display: inline-block;
     position: relative;
-    color: #000;
+    color: //000;
     font-size: 1.1em;
     text-decoration: none;
 
 }
 
 .menu > li > a:hover {
-    color: #EF5F21;
+    color: //EF5F21;
 }
 
 .menu ul li a {
@@ -986,14 +986,14 @@ ul.kid-menu {
     position: relative;
     font-size: 1.1em;
     margin: 0.3em 0;
-    color: #000;
+    color: //000;
     text-decoration: none;
 
     text-indent: 1.2em;
 }
 
 .menu ul li a:hover {
-    color: #EF5F21;
+    color: //EF5F21;
 }
 
 ul.kid-menu li, .menu ul li {
@@ -1009,16 +1009,16 @@ ul.kid-menu li, .menu ul li {
 }
 
 h3.best {
-    color: #000;
-    border-bottom: 1px solid #000;
+    color: //000;
+    border-bottom: 1px solid //000;
     width: 81%;
     font-size: 2em;
     font-family: 'Lato', sans-serif;
 }
 
 .pagination > .active > a, .pagination > .active > a:hover {
-    background: #EF5F21;
-    border-color: #EF5F21;
+    background: //EF5F21;
+    border-color: //EF5F21;
 }
 
 /*----*/
@@ -1040,7 +1040,7 @@ h6.shop-top {
     font-size: 1.1em;
     font-weight: 300;
     float: left;
-    color: #fff;
+    color: //fff;
     margin-top: 0.3em;
 }
 
@@ -1048,26 +1048,26 @@ a.shop-now {
     font-size: 0.9em;
     float: right;
     text-decoration: none;
-    border: 1px solid #ffffff;
+    border: 1px solid //ffffff;
     padding: 0.2em 0.4em;
-    color: #fff;
+    color: //fff;
 }
 
 a.shop-now:hover {
-    border: 1px solid #EF5F21;
-    background: #EF5F21;
+    border: 1px solid //EF5F21;
+    background: //EF5F21;
 }
 
 h3.tag {
-    color: #000;
-    border-bottom: 1px solid #000;
+    color: //000;
+    border-bottom: 1px solid //000;
     width: 32%;
     font-size: 2em;
     font-family: 'Lato', sans-serif;
 }
 
 .of-left-in {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid //000;
 }
 
 /*----*/
@@ -1088,19 +1088,19 @@ h6.best2 {
 }
 
 h6.best2 a {
-    color: #000;
+    color: //000;
     text-decoration: none;
 }
 
 h6.best2 a:hover {
-    color: #EF5F21;
+    color: //EF5F21;
 }
 
 span.price-in1 {
     font-size: 1.7em;
     padding: 0.3em 0 0;
     display: block;
-    color: #EF5F21;
+    color: //EF5F21;
 }
 
 span.price-in1 small {
@@ -1119,19 +1119,19 @@ span.price-in1 small {
 
 .six1 h4 {
     font-size: 2.5em;
-    color: #EF5F21;
+    color: //EF5F21;
     font-weight: 100;
 }
 
 .six1 p {
     font-size: 2em;
-    color: #EF5F21;
+    color: //EF5F21;
     margin: 0.5em 0 0;
 }
 
 .six1 span {
     font-size: 6em;
-    color: #EF5F21;
+    color: //EF5F21;
     font-weight: 100;
     font-family: 'Lato', sans-serif;
 }
@@ -1145,14 +1145,14 @@ span.price-in1 small {
 
 a.item_add p.number {
     font-size: 1.1em;
-    color: #FFF;
+    color: //FFF;
     text-align: center;
-    background: #EF5F21;
+    background: //EF5F21;
     padding: 0.5em 1em;
 }
 
 a.item_add p.number:hover {
-    background: #000;
+    background: //000;
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
     -o-transition: 0.5s all;
@@ -1207,17 +1207,17 @@ p.tun2 {
 
 .pro-grid span {
     text-decoration: none;
-    color: #fff;
+    color: //fff;
     font-size: 1.1em;
     font-weight: 600;
-    background: #EF5F21;
+    background: //EF5F21;
     padding: 0.5em 1.5em;
     text-transform: uppercase;
 }
 
 .pro-grid span:hover {
-    background: #fff;
-    color: #EF5F21;
+    background: //fff;
+    color: //EF5F21;
 }
 
 /*--//product--*/
@@ -1235,30 +1235,30 @@ ul.star-footer li i {
 }
 
 .single-para h4 {
-    color: #000;
+    color: //000;
     font-size: 1.5em;
     font-family: 'Lato', serif;
 }
 
 .single-para p {
     font-size: 1em;
-    color: #2c3e50;
+    color: //2c3e50;
     font-family: 'Lato', serif;
     line-height: 1.8em;
     margin: 1em 0;
 }
 
 .single-para h5 {
-    color: #EF5F21;
+    color: //EF5F21;
     font-size: 2em;
-    border-bottom: 1px solid #C4C3C3;
+    border-bottom: 1px solid //C4C3C3;
     padding: 0.3em 0;
 }
 
 .available ul li {
     list-style: none;
     padding: 0 0.5em 0 0;
-    color: #4c4c4c;
+    color: //4c4c4c;
     font-size: 1.1em;
     float: left;
     width: 100%;
@@ -1270,7 +1270,7 @@ ul.star-footer li i {
     outline: none;
     padding: 12px;
     border: none;
-    background: #eeeeee;
+    background: //eeeeee;
     width: 77%;
     margin-left: 13%;
     cursor: pointer;
@@ -1286,13 +1286,13 @@ ul.star-footer li i {
 
 ul.tag-men {
     padding: 0.3em 0;
-    border-top: 1px solid #C4C3C3;
-    border-bottom: 1px solid #C4C3C3;
+    border-top: 1px solid //C4C3C3;
+    border-bottom: 1px solid //C4C3C3;
 }
 
 ul.tag-men li {
     list-style: none;
-    color: #000;
+    color: //000;
     font-family: 'Lato', serif;
     margin: 0.3em 0;
     font-size: 0.9em;
@@ -1304,8 +1304,8 @@ ul.tag-men li span.women1 {
 
 a.add-cart {
     text-decoration: none;
-    color: #fff;
-    background: #EF5F21;
+    color: //fff;
+    background: //EF5F21;
     padding: 0.4em 0.8em;
     font-size: 0.9em;
     text-transform: uppercase;
@@ -1314,13 +1314,13 @@ a.add-cart {
 }
 
 a.add-cart:hover {
-    background: #000;
+    background: //000;
 
 }
 
 h3.real {
-    color: #000;
-    border-bottom: 1px solid #000;
+    color: //000;
+    border-bottom: 1px solid //000;
     margin: 0 0.5em 1em;
     font-size: 2em;
     font-family: 'Lato', serif;
@@ -1347,11 +1347,11 @@ h3.real {
 .star-on a {
     text-decoration: none;
     font-size: 1em;
-    color: #000;
+    color: //000;
 }
 
 .star-on a:hover {
-    color: #EF5F21;
+    color: //EF5F21;
 }
 
 /*----*/
@@ -1371,16 +1371,16 @@ h3.real {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-size: 1.1em;
-    color: #000;
-    background: #eee;
+    color: //000;
+    background: //eee;
     padding: 10px 16px;
     font-family: 'Lato', serif;
     text-decoration: none;
 }
 
 .cd-tabs-navigation a.selected {
-    background: #EF5F21;
-    color: #fff;
+    background: //EF5F21;
+    color: //fff;
 }
 
 .cd-tabs-content li {
@@ -1406,7 +1406,7 @@ h3.real {
 }
 
 .facts p {
-    color: #999;
+    color: //999;
     font-size: 1em;
     line-height: 1.7em;
     padding: 0 0 1em;
@@ -1415,19 +1415,19 @@ h3.real {
 
 .facts ul li {
     list-style: none;
-    color: #767676;
+    color: //767676;
     font-size: 1em;
     padding: 0.3em 0;
 }
 
 .color {
-    background: #eee;
+    background: //eee;
     margin: 1em 0;
     padding: 1em;
 }
 
 .color p, .color span {
-    color: #000;
+    color: //000;
     font-size: 1em;
     font-family: 'Lato', serif;
     float: left;
@@ -1447,26 +1447,26 @@ h3.real {
     float: left;
     width: 84%;
     margin-left: 1em;
-    background: #f8f8f8;
+    background: //f8f8f8;
     padding: 2em;
 }
 
 .top-comment-right h6 {
-    color: #000;
+    color: //000;
     font-size: 0.8em;
     font-family: 'Lato', serif;
 }
 
 .top-comment-right p {
-    color: #000;
+    color: //000;
     font-size: 1em;
     margin: 1em 0em 0 1em;
 }
 
 a.add-re {
     text-decoration: none;
-    color: #fff;
-    background: #EF5F21;
+    color: //fff;
+    background: //EF5F21;
     padding: 0.4em 0.8em;
     font-size: 0.9em;
     text-transform: uppercase;
@@ -1475,11 +1475,11 @@ a.add-re {
 }
 
 a.add-re:hover {
-    background: #000;
+    background: //000;
 }
 
 .top-comment-right h6 a {
-    color: #000;
+    color: //000;
     font-size: 1.5em;
     text-decoration: none;
 }
@@ -1503,7 +1503,7 @@ a.add-re:hover {
 .cabinet h1 {
     font-size: 3em;
     font-family: 'Lato', sans-serif;
-    color: #000;
+    color: //000;
     text-align: center;
     font-weight: 600;
     margin-bottom: 0.5em;
@@ -1511,7 +1511,7 @@ a.add-re:hover {
 .cabinet h3 {
     font-size: 2em;
     font-family: 'Lato', sans-serif;
-    color: #e15904;
+    color: //e15904;
     text-align: center;
     font-weight: 600;
     margin-bottom: 0.5em;
@@ -1524,7 +1524,7 @@ a.add-re:hover {
 .register h1 {
     font-size: 3em;
     font-family: 'Lato', sans-serif;
-    color: #000;
+    color: //000;
     text-align: center;
     font-weight: 600;
     margin-bottom: 0.5em;
@@ -1533,7 +1533,7 @@ a.add-re:hover {
 .register-top-grid h3, .register-bottom-grid h3 {
     font-size: 1.5em;
     font-family: 'Lato', sans-serif;
-    color: #000;
+    color: //000;
     margin-bottom: 0.5em;
     text-transform: uppercase;
     font-weight: 600;
@@ -1542,7 +1542,7 @@ a.add-re:hover {
 .register-top-grid span, .register-bottom-grid span {
     font-size: 1em;
     display: block;
-    color: #A09F9F;
+    color: //A09F9F;
 }
 
 .register-top-grid input[type="text"], .register-bottom-grid input[type="password"], .register-top-grid input[type="email"] {
@@ -1551,7 +1551,7 @@ a.add-re:hover {
     margin: 1em 0;
     background: none;
     outline: none;
-    border: 1px solid #A09F9F;
+    border: 1px solid //A09F9F;
     -webkit-appearance: none;
 }
 
@@ -1565,7 +1565,7 @@ a.add-re:hover {
 }
 
 .news-letter {
-    color: #EF5F21;
+    color: //EF5F21;
     font-size: 1em;
     margin-bottom: 1em;
     display: inline-block;
@@ -1585,7 +1585,7 @@ a.add-re:hover {
     width: 20px;
     height: 20px;
     outline: none;
-    border: 2px solid #EF5F21;
+    border: 2px solid //EF5F21;
 }
 
 .checkbox input + i:after {
@@ -1619,13 +1619,13 @@ a.add-re:hover {
 }
 
 .news-letter:hover {
-    color: #000;
+    color: //000;
 }
 
 .register-bottom-grid input[type="submit"] {
-    background: #EF5F21;
+    background: //EF5F21;
     padding: 0.4em 1em;
-    color: #fff;
+    color: //fff;
     font-size: 1.2em;
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
@@ -1637,7 +1637,7 @@ a.add-re:hover {
 }
 
 .register-bottom-grid input[type="submit"]:hover {
-    background: #000;
+    background: //000;
 
 }
 
@@ -1646,7 +1646,7 @@ a.add-re:hover {
 .account h1 {
     font-size: 3em;
     font-family: 'Lato', sans-serif;
-    color: #000;
+    color: //000;
     text-align: center;
     font-weight: 600;
     margin-bottom: 0.5em;
@@ -1655,7 +1655,7 @@ a.add-re:hover {
 .account h3 {
     font-size: 2em;
     font-family: 'Lato', sans-serif;
-    color: #e15904;
+    color: //e15904;
     text-align: center;
     font-weight: 600;
     margin-bottom: 0.5em;
@@ -1665,7 +1665,7 @@ a.add-re:hover {
     font-size: 1em;
     display: block;
     padding: 0 0 0.5em;
-    color: #A09F9F;
+    color: //A09F9F;
 }
 
 .account-top div {
@@ -1677,7 +1677,7 @@ a.add-re:hover {
     padding: 1em;
     width: 100%;
     background: none;
-    border: 1px solid #A09F9F;
+    border: 1px solid //A09F9F;
     outline: none;
 
     font-size: 1em;
@@ -1691,9 +1691,9 @@ a.add-re:hover {
 .account-top input[type="submit"] {
     outline: none;
     padding: 7px 20px;
-    color: #FFF;
+    color: //FFF;
     cursor: pointer;
-    background: #EF5F21;
+    background: //EF5F21;
     border: none;
     width: 20%;
     margin: 1em auto 0;
@@ -1706,7 +1706,7 @@ a.add-re:hover {
 }
 
 .account-top input[type="submit"]:hover {
-    background: #000;
+    background: //000;
 }
 
 .account {
@@ -1714,9 +1714,9 @@ a.add-re:hover {
 }
 
 .five {
-    background: #fff;
+    background: //fff;
     border-radius: 100px;
-    border: 2px solid #EF5F21;
+    border: 2px solid //EF5F21;
     width: 100px;
     height: 100px;
     position: absolute;
@@ -1728,20 +1728,20 @@ a.add-re:hover {
 
 .five span {
     font-size: 1em;
-    color: #EF5F21;
+    color: //EF5F21;
 }
 
 .five h2 {
     font-size: 1.5em;
     font-weight: 700;
-    color: #000;
+    color: //000;
 }
 
 a.create {
     text-decoration: none;
-    color: #fff;
+    color: //fff;
     padding: 7px 20px;
-    background: #EF5F21;
+    background: //EF5F21;
     text-align: center;
     display: block;
 }
@@ -1754,7 +1754,7 @@ a.create {
 .single-bottom h3 {
     font-size: 3em;
     font-family: 'Lato', sans-serif;
-    color: #000;
+    color: //000;
     text-align: center;
     font-weight: 600;
     margin-bottom: 0.7em;
@@ -1769,9 +1769,9 @@ a.create {
     padding: 1em;
     background: none;
     outline: none;
-    border: 1px solid #A09F9F;
+    border: 1px solid //A09F9F;
     font-size: 1em;
-    color: #A09F9F;
+    color: //A09F9F;
     -webkit-appearance: none;
     margin: 0 0 1em;
 }
@@ -1779,10 +1779,10 @@ a.create {
 .single-bottom input[type="submit"] {
     width: 10%;
     font-size: 1.3em;
-    background: #EF5F21;
+    background: //EF5F21;
     padding: 0.4em 0.8em;
     text-align: center;
-    color: #fff;
+    color: //fff;
     border: none;
     outline: none;
     -webkit-appearance: none;
@@ -1790,7 +1790,7 @@ a.create {
 }
 
 .single-bottom input[type="submit"]:hover {
-    background: #000;
+    background: //000;
 }
 
 .single-bottom textarea {
@@ -1837,7 +1837,7 @@ a.create {
 }
 
 .cart-item-info h3 a {
-    color: #000;
+    color: //000;
 }
 
 .cart-item-info h3 span {
@@ -1901,11 +1901,11 @@ margin-bottom: 2em;
 }
 
 a.order {
-    background: #EF5F21;
+    background: //EF5F21;
     padding: 10px 20px;
     font-family: 'Lato', sans-serif;
     font-size: 1em;
-    color: #fff;
+    color: //fff;
     text-decoration: none;
     display: block;
     font-weight: 600;
@@ -1914,7 +1914,7 @@ a.order {
 }
 
 a.order:hover {
-    background: #000;
+    background: //000;
 }
 
 .total-item, .cart-items {
@@ -1922,7 +1922,7 @@ a.order:hover {
 }
 
 .total-item h3 {
-    color: #333;
+    color: //333;
     font-size: 1.1em;
     margin-bottom: 1em;
 }
@@ -1930,14 +1930,14 @@ a.order:hover {
 .total-item h4 {
     font-size: 0.8em;
     font-weight: 600;
-    color: #9C9C9C;
+    color: //9C9C9C;
     display: inline-block;
     margin-right: 6em;
 }
 
 a.cpns {
-    background: #EF5F21;
-    color: #fff;
+    background: //EF5F21;
+    color: //fff;
     font-family: 'Lato', sans-serif;
     padding: 10px;
     font-size: 0.8em;
@@ -1945,7 +1945,7 @@ a.cpns {
 }
 
 a.cpns:hover {
-    background: #000;
+    background: //000;
 }
 
 .total-item p {
@@ -1955,20 +1955,20 @@ a.cpns:hover {
 }
 
 .total-item p a {
-    color: #727272;
+    color: //727272;
 }
 
 .total-item p a:hover {
-    color: #000;
+    color: //000;
     text-decoration: underline;
 }
 
 a.continue {
-    background: #EF5F21;
+    background: //EF5F21;
     padding: 10px 20px;
     font-family: 'Lato', sans-serif;
     font-size: 1em;
-    color: #fff;
+    color: //fff;
     text-decoration: none;
     display: block;
     font-weight: 600;
@@ -1977,7 +1977,7 @@ a.continue {
 }
 
 a.continue:hover {
-    background: #000;
+    background: //000;
 }
 
 ul.total_price {
@@ -1995,16 +1995,16 @@ ul.total_price li.last_price {
 ul.total_price li.last_price span {
     font-size: 2em;
     font-weight: 600;
-    color: #000;
+    color: //000;
 }
 
 .price-details {
-    border-bottom: 1px solid #DDD9D9;
+    border-bottom: 1px solid //DDD9D9;
     padding-bottom: 10px;
 }
 
 .price-details h3 {
-    color: #000;
+    color: //000;
     font-size: 1.2em;
     margin-bottom: 1em;
 }
@@ -2014,7 +2014,7 @@ ul.total_price li.last_price span {
     float: left;
 
     font-size: 0.8125em;
-    color: #000;
+    color: //000;
     line-height: 1.8em;
 }
 
@@ -2036,13 +2036,13 @@ a.item_add1 {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     padding: 10px 15px;
-    background: url(0) #f54d56;
+    background: url(0) //f54d56;
 }
 
 a.item_add1:hover {
     background: rgb(3, 193, 167);
     text-decoration: none;
-    color: #fff;
+    color: //fff;
 }
 
 .btn_5 {
@@ -2063,7 +2063,7 @@ ul.qty li {
 
 ul.qty li p {
     font-size: 0.8125em;
-    color: #555;
+    color: //555;
 }
 
 /*--responsive--*/

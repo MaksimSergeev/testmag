@@ -1,21 +1,24 @@
 <?php
 
-class CabinetController {
+class CabinetController
+{
 
-    public static function actionIndex() {
-        # Get User id from session
+    public static function actionIndex()
+    {
+        // Get User id from session
         $userId = User::checkLogged();
-        # Get information about user from DB
+        // Get information about user from DB
         $user = User::getUserById($userId);
 
-        require_once (ROOT . '/views/cabinet/index.php');
+        require_once(ROOT . '/views/cabinet/index.php');
         return true;
     }
 
-    public static function actionEdit() {
-        # Get User id from session (check user logged or not)
+    public static function actionEdit()
+    {
+        // Get User id from session (check user logged or not)
         $userId = User::checkLogged();
-        # Get information about user from DB (name and password)
+        // Get information about user from DB (name and password)
         $user = User::getUserById($userId);
 
         $name = $user['name'];
@@ -41,7 +44,7 @@ class CabinetController {
             }
         }
 
-        require_once (ROOT . '/views/cabinet/edit.php');
+        require_once(ROOT . '/views/cabinet/edit.php');
         return true;
     }
 }

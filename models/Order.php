@@ -2,7 +2,7 @@
 
 class Order
 {
-    # Save order in DB
+    // Save order in DB
     public static function save($userName, $userPhone, $userComment, $userId, $products)
     {
         $products = json_encode($products);

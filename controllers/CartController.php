@@ -1,13 +1,16 @@
 <?php
 
-class CartController {
+class CartController
+{
 
-    public static function actionAdd($id) {
-        # Add product to cart with AJAX
+    public static function actionAdd($id)
+    {
+        // Add product to cart with AJAX
         echo Cart::addProduct($id);
         return true;
     }
-    # Remove item from cart with AJAX
+
+    // Remove item from cart with AJAX
     public function actionDelete($id)
     {
         $ArrToJson = array();
@@ -15,10 +18,10 @@ class CartController {
 
         $productsInCart = Cart::getProducts();
         if ($productsInCart) {
-            # Get all information about products for list
+            // Get all information about products for list
             $productsIds = array_keys($productsInCart);
             $products = Product::getProductsByIds($productsIds);
-            # Get total price
+            // Get total price
             $totalPrice = Cart::getTotalPrice($products);
         }
 
@@ -32,64 +35,65 @@ class CartController {
         return true;
     }
 
-    public static function actionIndex() {
-
+    public static function actionIndex()
+    {
         $productsInCart = false;
-        # Get products from session
+        // Get products from session
         $productsInCart = Cart::getProducts();
 
         if ($productsInCart) {
-            # Get all information about products for list
+            // Get all information about products for list
             $productsIds = array_keys($productsInCart);
             $products = Product::getProductsByIds($productsIds);
-            # Get total price
+            // Get total price
             $totalPrice = Cart::getTotalPrice($products);
         }
 
-        require_once (ROOT . '/views/cart/index.php');
+        require_once(ROOT . '/views/cart/index.php');
         return true;
     }
 
-    public function actionCheckout() {
-        # Get products from session
+    public function actionCheckout()
+    {
+        // Get products from session
         $productsInCart = Cart::getProducts();
-        # If there are no products, relocate user to catalog
+        // If there are no products, relocate user to catalog
         if ($productsInCart == false) {
             header("Location: /catalog");
         }
-        # Get total price
+        // Get total price
         $productsIds = array_keys($productsInCart);
         $products = Product::getProductsByIds($productsIds);
         $totalPrice = Cart::getTotalPrice($products);
-        # Get total products in cart
+        // Get total products in cart
         $totalQuantity = Cart::countItems();
-        # Fields for forms
+        // Fields for forms
         $userName = false;
         $userPhone = false;
         $userComment = false;
-        # Successful order status
+        // Successful order status
         $result = false;
-        # Check whether the user is a guest
+        // Check whether the user is a guest
         if (!User::isGuest()) {
-            # If the user is not a guest
-            # Get information about user from DB
+            // If the user is not a guest
+            // Get information about user from DB
             $userId = User::checkLogged();
             $user = User::getUserById($userId);
             $userName = $user['name'];
         } else {
-            # If the guest, the form fields will remain empty
+            // If the guest, the form fields will remain empty
             $userId = null;
         }
-        # Form processing
+        // Form processing
         if (isset($_POST['submit'])) {
-            # If the form is sent
-            # Get data from form
+            // If the form is sent
+            // Get data from form
             $userName = $_POST['userName'];
             $userPhone = $_POST['userPhone'];
             $userComment = $_POST['userComment'];
-            # Errors
+            // Errors
             $errors = false;
-            # Validation fields
+            // Validation fields
             if (!User::checkName($userName)) {
                 $errors[] = 'Incorrect name';
             }
@@ -98,18 +102,18 @@ class CartController {
             }
 
             if ($errors == false) {
-                # If there are no errors
-                # Save the order in the database
+                // If there are no errors
+                // Save the order in the database
                 $result = Order::save($userName, $userPhone, $userComment, $userId, $productsInCart);
 
                 if ($result) {
-                    # If the order was successfully saved
-                    # Clear cart
+                    // If the order was successfully saved
+                    // Clear cart
                     Cart::clear();
                 }
             }
         }
-        require_once (ROOT . '/views/cart/checkout.php');
+        require_once(ROOT . '/views/cart/checkout.php');
         return true;
     }
 }

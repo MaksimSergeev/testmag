@@ -10,7 +10,7 @@
             <?php else: ?>
             <div class="account-pass">
                 <div class="col-md-offset-3 col-md-6 account-top">
-                    <form action="#" method="post">
+                    <form action="//" method="post">
                         <div>
                             <input placeholder="Name" type="text" name="name" value="<?php echo $name; ?>">
                         </div>
